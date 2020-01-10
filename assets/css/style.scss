@@ -1,0 +1,65 @@
+@import "variables/variables";
+@import "variables/bootstrap";
+@import "variables/wp";
+@import "variables/woo";
+@import "common";
+
+//header
+@import "common-blocks/header/form-reg-login-font";
+@import "common-blocks/header/form_reg_login";
+@import "common-blocks/header/header";
+@import "common-blocks/header/_header_icon_cart";
+@import "common-blocks/header/header_search_form";
+@import "common-blocks/header/header_top_nav_menu";
+@import "common-blocks/header/header_breadcrumbs";
+/*end header*/
+
+// widgets
+@import "common-blocks/widgets/wp";
+@import "common-blocks/widgets/woo";
+
+// pagination
+@import "common-blocks/pagination/style";
+
+// product sale upsale crossale and etc
+@import "common-blocks/product-sale/style";
+
+// litle block common
+@import "common-blocks/style";
+
+
+//cart
+@import "cart/cart_btn_quantity";
+@import "cart/cart_page";
+//end cart
+
+// checkout page
+@import "checkout/checkout";
+
+// my account
+@import "my-account/my-account";
+
+
+// single product
+@import "single-product/single-product";
+// tabs for pruduct single page
+@import "single-product/tabs/comments";
+@import "single-product/tabs/description";
+@import "single-product/tabs/details";
+
+
+// archive
+@import "archive/archive";
+@import "archive/archive-product";
+
+// content -- page new and other content style
+@import "common-blocks/content/content";
+
+
+// pages
+@import "pages/404";
+@import  "pages/search";
+@import "pages/front_page";
+
+// footer
+@import "common-blocks/footer/style";

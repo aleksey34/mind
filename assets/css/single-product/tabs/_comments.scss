@@ -1,0 +1,113 @@
+#comments{
+
+  ol{
+    list-style: none;
+    padding: 0;
+    li{
+
+    }
+  }
+
+  .comment_container{
+    display: flex;
+
+    &>img{
+      border-radius:50%;
+      margin: 5px 18px 9px 0;
+    }
+  }
+
+}
+
+#review_form_wrapper {
+
+  .stars > span {
+    a {
+
+    }
+
+  }
+}
+
+#commentform{
+display:grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-gap: 8px;
+  &> *{
+grid-column: span 2;
+  }
+  p.form-submit{
+    input.submit{
+      @extend  %btn;
+      @extend  %btn_dark;
+    }
+  }
+
+  p.comment-form-author {
+    grid-column: span 1;
+    order:-3;
+    input{
+      @extend %form_control;
+    }
+  }
+
+  p.comment-form-email{
+    grid-column: span 1;
+    order:-2;
+    input{
+      @extend %form_control;
+    }
+  }
+
+  p.comment-form-cookies-consent {
+    order: -1;
+    input{
+
+    }
+
+  }
+  p.comment-notes{
+    order: - 5;
+    padding-top: 11px;
+  }
+
+}
+
+ #comment{
+@extend %form_control_textarea;
+   .form-submit{
+     input[name=submit]{
+       @extend %btn;
+       @extend  %btn_dark;
+     }
+   }
+}
+
+ // alert -no comments
+#comments .woocommerce-noreviews{
+@extend  %alert;
+   @extend  %alert_primary;
+   width: 100%;
+ }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .comment-respond{
+
+  }
+
+}
+
+@media (max-width: 767.98px) {
+  #commentform{
+    display:grid;
+    grid-template-columns:  1fr;
+    grid-gap: 8px;
+    &> *{
+      grid-column: span 1;
+    }
+
+  }
+
+}

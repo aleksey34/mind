@@ -1,0 +1,51 @@
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {  
+
+
+
+
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+
+
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+
+	
+ }
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+
+
+ }
+ 
+ 
+// this is for working whis  mobil devices - orientation - vertical
+@media (max-width: 1030px)and(orientation: portrait) { 
+
+
+	
+ }
+ 
+ 
+ // this is for working whis  mobil devices - orientation - horisantal
+ @media (max-width: 1030px)and(orientation: landscape) { 
+
+ 
+	
+ }
+ 
+ 

@@ -1,0 +1,56 @@
+//applay for nav.woocommerce-pagination
+// for theme underscore with support Woo
+// default html structure
+%woo_pagination{
+  ul.page-numbers{
+
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    &>li{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & > *{
+        position: relative;
+        display: block;
+        padding: .5rem .75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        color: #007bff;
+        background-color: #fff;
+        border: 1px solid #dee2e6;
+        transition: all 0.5s;
+      }
+      & > span.page-numbers.current ,
+      & > a.page-numbers:hover,
+      &> span.page-numbers:hover{
+        z-index: 1;
+        color: #fff;
+        position: relative;
+        display: block;
+        padding: .5rem .75rem;
+        margin-left: -1px;
+        line-height: 1.25;
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+      &> a.page-numbers.prev ,
+      & > a.page-numbers.next{
+
+      }
+    }
+  }
+}
+
+// widget woo
+section.widget.woocommerce{
+
+
+
+}

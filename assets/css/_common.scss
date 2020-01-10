@@ -1,0 +1,32 @@
+html , body{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  font-size: 16px;
+}
+body{
+ // background:fixed url("../img/bt_star_1.jpg") repeat;
+}
+*{
+  color: $black;
+}
+h1 , h2 , h3 , h4 ,h5 , h6{
+  font-family: "Roboto Slab" , serif;
+  font-weight: 500;
+  color: $black;
+}
+a{
+  color: #1a1a1a;
+  text-decoration: none;
+  &:hover{
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  body{
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+}

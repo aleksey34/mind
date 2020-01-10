@@ -1,0 +1,5 @@
+// litle block
+p.woocommerce-info{
+  @extend  %alert;
+  @extend  %alert_primary;
+}

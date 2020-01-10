@@ -1,0 +1,36 @@
+.header-breadcrumbs{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > div:first-child{
+    padding-bottom: 5px;
+  }
+
+  .custom-logo-link{
+
+    & img{
+      width: 55px;
+      height: 55px;
+
+    }
+  }
+
+}
+
+.header-breadcrumbs {
+   nav.woocommerce-breadcrumb{
+     color: lighten($black , 10%);
+
+     a{
+       text-decoration: none;
+       transition: all 0.5s;
+       color: lighten($black , 10%);
+       &:hover{
+         transition: all 0.5s;
+         color: $black;
+         text-shadow: 1px 1px 1px rgba($black , 0.2);
+       }
+     }
+   }
+}

@@ -1,0 +1,68 @@
+.woocommerce-MyAccount-navigation{
+  margin: 10px auto 25px auto;
+}
+.woocommerce-MyAccount-navigation .is-active a{
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+// form edit address
+.woocommerce-address-fields__field-wrapper{
+  display: grid;
+  width:100%;
+  grid-template-columns: repeat(6 , 1fr);
+  grid-column-gap: 15px;
+  &>p{
+    grid-column: 2 span;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+// order table
+.woocommerce-orders-table a{
+  @extend %text_decoration_none;
+  @extend %color_dark;
+  @extend %transition_middle;
+  opacity: 0.6;
+  &:hover{
+    opacity: 1;
+    @extend  %transition_middle;
+  }
+}
+
+
+
+//order=downloads
+.woocommerce-order-downloads  a{
+  //text-decoration:  none;
+  @extend  %text_decoration_none;
+  @extend %color_dark;
+  opacity: 0.5;
+  @extend  %transition_middle;
+  &:hover{
+    @extend  %transition_middle;
+    opacity: 1;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .woocommerce-address-fields__field-wrapper{
+    grid-template-columns: repeat(4 , 1fr);
+  }
+
+}
+
+
+@media only screen and (max-width: 576px) {
+  .woocommerce-address-fields__field-wrapper{
+   grid-template-columns: repeat(2 , 1fr);
+
+  }
+
+
+}

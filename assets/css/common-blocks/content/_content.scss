@@ -1,0 +1,48 @@
+//
+
+article.single-post-page{
+  .entry-header{
+
+  }
+
+  .entry-thumbnail-entry-meta{
+
+    .entry-meta{
+      margin: 12px 0 12px 0;
+    }
+  }
+}
+
+article.archive-post-page  , article.single-post-page{
+  .entry-header{
+
+  }
+
+   &  .entry-thumbnail-entry-meta{
+    margin-bottom: 12px;
+  //  display: flex;
+    align-items: flex-end;
+   // justify-content: space-between;
+   // flex-wrap: wrap;
+    .entry-meta{
+    //  padding-left: 8px;
+      padding-top: 12px;
+
+    }
+
+    & >a.post-thumbnail , &>div.post-thumbnail{
+      display: block;
+      width: 100%;
+      &>img{
+        width: 100%;
+        height: auto;
+        @extend  %img_thumbnail;
+       // @extend %img_fluid;
+        border-radius: 12px;
+      }
+    }
+
+
+  }
+}
+

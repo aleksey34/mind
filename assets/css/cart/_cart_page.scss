@@ -1,0 +1,69 @@
+.actions{
+  //@extend %description;
+  background: darken(#fff , 10%);
+  border-radius: 3px;
+  transition: all 0.5s;
+  margin-top: 15px;
+  &:hover{
+    background: darken( #fff, 15%);
+    transition: all 0.5s;
+  }
+}
+
+.actions button{
+@extend  %btn;
+  @extend %btn_dark;
+}
+.actions  .coupon button{
+  margin-top: 15px;
+}
+//.actions  > button:disabled{
+//  @extend  %btn_dark;
+//}
+
+.coupon input{
+ @extend %form_control;
+}
+
+div.woocommerce-message {
+  background-color: transparent;
+  &>div{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+form.woocommerce-cart-form{
+  @extend %table_responsive;
+}
+
+.woocommerce-cart-form__contents{
+  @extend  %table;
+  @extend  %table_striped;
+}
+
+.woocommerce-cart-form__contents td.product-thumbnail a > img{
+  width: 80px;
+  height: 60px;
+  margin:0;
+}
+
+
+
+.cart-collaterals{
+
+}
+
+
+.cart_totals{
+@extend  %table_responsive;
+  .shop_table{
+    @extend  %table;
+    @extend  %table_striped;
+  }
+  .checkout-button{
+    @extend %btn;
+    @extend %btn_danger;
+  }
+
+}

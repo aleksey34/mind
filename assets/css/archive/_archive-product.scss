@@ -1,0 +1,120 @@
+// layout card of product ; if go problem -will with grid
+
+form.woocommerce-ordering{
+  margin-bottom: 12px;
+  margin-top: 10px;
+  select.orderby{
+    border:2px solid #eee;
+    padding: 5px;
+    border-radius: 2px;
+    transition: all 0.5s;
+    box-shadow: 1px 1px  1px 2px  #eee;
+    &:hover{
+      border: 2px solid darken(#eee , 20%);
+      box-shadow: 1px 1px  1px 2px   darken(#eee , 20%);
+    }
+    option{
+      font-size:16px;
+      padding: 5px 5px;
+      font-weight: 600;
+      background-color: lightyellow;
+      transition: all 0.5s;
+      &:hover{
+        background-color: darken(lightyellow , 10% ) ;
+      }
+      &[selected]{
+        background-color: darken(lightyellow , 10% ) ;
+      }
+    }
+  }
+}
+
+body ul.products{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  img.woocommerce-placeholder , img.attachment-woocommerce_thumbnail{
+    @extend %img_thumbnail;
+    width: 100% ;
+    margin-bottom: 12px;
+  }
+
+  li.product.type-product{
+    //flex: 0 1 330px ;
+
+  }
+
+
+  &>li.product.type-product{
+    margin: 10px 0 10px 0;
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    box-shadow:  0 0  0 3px rgba(0,0,0, 0.07);
+    background: rgba(#eee , 0.4);
+    align-items: center;
+    padding: 15px 5px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    &:hover{
+      box-shadow:  0 0  0 4px rgba(0,0,0, 0.07) , inset  0 0  0 1px rgba(0,0,0, 0.07);
+      background: rgba(#eee , 0.8);
+    }
+    &>a.woocommerce-loop-product__link{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      h2.woocommerce-loop-product__title{
+        margin-top: 13px;
+      }
+    }
+
+  }
+
+   a.ajax_add_to_cart{
+    @extend %btn;
+    @extend  %btn_dark;
+     margin-top: 9px;
+    &:hover{
+      color: #fff;
+    }
+  }
+
+
+  span.price{
+    margin-top: 9px;
+  }
+
+
+}
+// onsale only in archive
+a.woocommerce-loop-product__link > span.onsale{
+  position: absolute;
+ // top: 16px;
+ // left: 50%;
+  top: 0;
+  right: 0;
+ // transform: translateX(-50%);
+  z-index: 5;
+}
+
+// Medium devices (tablets, less than 992px)
+//@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
+  body ul.products {
+    & > li.product.type-product {
+      display: block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a.button.ajax_add_to_cart {
+     display: inline-block;
+    }
+
+
+  }
+
+}
+// end card of pruduct

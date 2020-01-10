@@ -1,0 +1,20 @@
+.woocommerce-tabs.wc-tabs-wrapper{
+  width:100%;
+  padding-bottom: 19px;
+}
+
+.woocommerce-Tabs-panel{
+  @extend %description;
+  margin-top: 35px ;
+  &>*:first-child{
+    padding-top: 10px;
+  }
+}
+
+
+.woocommerce-Tabs-panel--additional_information{
+   @extend %table_responsive;
+ }
+.woocommerce-product-attributes{
+  @extend  %table;
+}

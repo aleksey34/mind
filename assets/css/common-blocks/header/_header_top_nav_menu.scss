@@ -1,0 +1,142 @@
+.custom-logo-link{
+  @extend  %text_decoration_none;
+  .custom-logo{
+    width: 27px;
+    height: 27px;
+  }
+}
+// custom logo in top navbar
+.custom-logo-link > img{
+  width: 27px;
+  height: 27px;
+  margin-right: 5px;
+}
+//start navbar
+.header-nav{
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+
+  .current-menu-item > .nav-link{
+    // imtoptant for change style of bootstrap
+    color: black !important;
+    @extend %transition_middle;
+  }
+}
+.top-navbar-scroll-fixed{
+  position: fixed;
+  top:-9px ;// why??
+}
+.admin-bar .top-navbar-scroll-fixed{
+  position: fixed;
+  //top: 32px;
+  top: 24px;
+}
+
+//end navbar
+// default style and replace inline style
+.header-nav {
+  & > nav{
+    background-color: transparent;
+    .menu{
+      border-bottom: none;
+    }
+  }
+}
+
+// decoration element and etc
+.header-nav li.nav-item{
+  padding-left: 0;
+  padding-right: 0;
+  height: 100%;
+  background: darken(#fff , 25%);
+  transition: all 0.5s;
+  position: relative;
+  a{
+    outline: none;
+    border: none;
+
+  }
+}
+.header-nav li.nav-item.current-menu-item,
+.header-nav  li.nav-item:hover,
+.header-nav li.dropdown.show{
+  background: darken(#fff , 30%);
+  transition: all 0.5s;
+  box-shadow: inset 2px 2px 3px  rgba($black , .35);
+
+  & > a{
+    color: #fff !important; // sory cannot set color -- bootstrfp?? need fix
+    transition: all 0.5s;
+   // text-shadow: 1px 1px 2px black;
+  }
+}
+.header-nav li.dropdown.show > a.nav-link.dropdown-toggle{
+  background: lighten($black , 30%);
+  transition: all 0.5s;
+}
+
+.header-nav  ul.menu > li.nav-item  {
+@include  btn_underline_hover_active(rgba(lighten($black , 40%) , 0.9) , rgba(gray , 1) )
+}
+
+//.header-nav ul.menu > li.nav-item.current-menu-item {
+//  &:before {
+//    box-shadow: 0 2px 2px 3px rgba(yellow, 0.4);
+//    width: 100%;
+//    transition: all 0.5s;
+//  }
+//}
+
+// header nav name and logout in menu
+.header-nav-menu-name-logout{
+  display: flex;
+  a{
+    display: block;
+    width:100%;
+    border-radius: 2px;
+    text-decoration: none;
+    color: $black;
+    transition: all 0.5s;
+    padding: 4px 6px 4px 6px ;
+    &:hover{
+      transition: all 0.5s;
+      background-color: lighten($black , 30%);
+    }
+    &:hover > span ,
+    &:hover > i{
+      color: lighten( $black , 80%);
+      transition: all 0.5s;
+    }
+    &:first-child{
+      margin-right: 5px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+
+
+// media
+@media (max-width: 991.98px) {
+  .header-nav ul.menu > li.nav-item.current-menu-item:before,
+  .header-nav ul.menu >  li.nav-item:hover:before{
+    width: 0;
+  }
+  .header-nav ul.menu{
+    display: block;
+  }
+
+
+}
+
+
+// for big Wp paneL for small screen // for WP - top admin panel
+@media (max-width: 782px) {
+  .admin-bar .top-navbar-scroll-fixed{
+    top: 40px;
+  }
+}

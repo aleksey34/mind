@@ -1,0 +1,102 @@
+// this place for  var template and mixin
+// $var  -- var  == without directive
+// %var -- template  === @extend
+// @var($property){ color: $property }  --  mixin == @include
+
+
+// variable
+$black:  lighten(#212529 , 10%);
+$color_dark: #1a1a1a;
+// end variable
+
+
+// style text like description bg and etc
+%description{
+  padding: .75rem 1rem;
+  list-style: none;
+  background-color: rgba( #e9ecef   , 0.5 );
+  border-radius: .25rem;
+  border-right: 4px;
+  color: lighten($black , 20%);
+}
+
+
+// end big template
+
+// mixin
+@mixin btn_underline_hover_active($color_line , $color_shadow ) {
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    width: 0;
+    height:2px;
+    background-color: $color_line;
+    box-shadow: none;
+    z-index:9999;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: all 0.5s;
+  }
+  &:hover:before{
+    box-shadow:0 2px 2px 0 $color_shadow;
+    width: 100%;
+    transition: all 0.5s;
+  }
+}
+//#000 , yellow , 0.9 , 0.4 , 50%
+
+@mixin block_underline_left_right_hover_active($color_line , $color_shadow){
+  position: relative;
+  &:before{
+    content: "";
+    display: block;
+    width: 0;
+    height:2px;
+    background-color: $color_line;
+    box-shadow: none;
+    z-index:9999;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: all 0.5s;
+  }
+  &:hover:before{
+    box-shadow:0 2px 2px 0 $color_shadow;
+    width: 50%;
+    transition: all 0.5s;
+  }
+
+  &:after{
+    content: "";
+    display: block;
+    width: 0;
+    height:2px;
+    background-color: $color_line;
+    box-shadow: none;
+    z-index:9999;
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    transition: all 0.5s;
+  }
+  &:hover:after{
+    box-shadow:0 2px 2px 0 $color_shadow;
+    width: 50%;
+    transition: all 0.5s;
+  }
+}
+
+@mixin divider($color1 , $color2 , $color3 , $color4, $lineWidth){
+  height: $lineWidth;
+  background: repeating-radial-gradient( $color1 , $color2  , $color3 , $color4 );
+};
+
+
+// for section in front page and ? contact , about
+@mixin page_section(){
+
+}
+
+// end mixin

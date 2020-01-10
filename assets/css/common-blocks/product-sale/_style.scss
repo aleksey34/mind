@@ -1,0 +1,98 @@
+// crosssale upsells realation prudict
+
+// layout card of product ; if go problem -will with grid
+section.upsells , section.related  , div.cross-sells{
+  width: 100%;
+}
+
+body section.upsells ul.products ,
+body section.related ul.products,
+body div.cross-sells ul.products{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  //&>li.product.type-product:last-child{
+  //  margin-right: auto;
+  //}
+  &>li.product.type-product{
+
+    img.woocommerce-placeholder , img.attachment-woocommerce_thumbnail{
+      @extend %img_thumbnail;
+      width: 100% ;
+      margin-bottom: 12px;
+    }
+
+    margin: 10px 0 10px 0;
+    display: flex;
+    width: 32%; // important -- 3 columns // 23% -- 4 columns - etc//
+    flex-direction: column;
+    align-items: center;
+   // margin-right: 10px;
+    &>a.woocommerce-loop-product__link{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      h2.woocommerce-loop-product__title{
+        margin-top: 13px;
+      }
+    }
+
+  }
+
+  a.ajax_add_to_cart{
+    @extend %btn;
+    @extend  %btn_dark;
+    margin-top: 9px;
+    &:hover{
+      color: #fff;
+    }
+  }
+
+  span.onsale{
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  span.price{
+    margin-top: 9px;
+  }
+
+
+}
+
+// Medium devices (tablets, less than 992px)
+//@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
+  body section.upsells ul.products ,
+  body section.related ul.products,
+  body div.cross-sells ul.products {
+    justify-content: center;
+    //align-items:center;
+    //align-content: center;
+    //flex-direction: column;
+    & > li.product.type-product {
+      display: block;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    //&>li.product.type-product:last-child{
+    //  margin-right: 0;
+    //}
+
+    a.button.ajax_add_to_cart {
+      display: inline-block;
+    }
+
+  }
+
+}
+// end card of product
+
+
+section.related.products {
+  width: 100%;
+}

@@ -1,0 +1,16 @@
+.post-thumbnail{
+
+  img{
+    max-width: 100%;
+  }
+}
+
+
+a.more-link{
+  transition: all 0.5s;
+  &:hover{
+    transition: all 0.5s;
+    font-style: italic;
+    font-weight: bold;
+  }
+}

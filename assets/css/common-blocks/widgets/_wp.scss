@@ -1,0 +1,17 @@
+aside.widget-area{
+  padding-top: 13px;
+}
+// wrapper
+
+// add style wp widget  all page and 404 page
+section.widget ,
+.widget{
+  @extend  %wp_widget;
+
+}
+
+.sidebar-404  .widget{
+  padding-top: 13px;
+
+}
+

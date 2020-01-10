@@ -1,0 +1,88 @@
+
+// widget cart Woo
+section.widget.woocommerce.widget_shopping_cart{
+
+  ul.woocommerce-mini-cart{
+
+    li.mini_cart_item{
+      position: relative;
+      display: block;
+      padding: 15px auto 20px auto;
+      background-color: lightyellow;
+      transition: all 0.5s;
+      &:hover{
+        background-color: darken(lightyellow , 10%);
+      }
+      a.remove_from_cart_button{
+        position: absolute;
+        z-index: 10;
+        font-size: 22px;
+        transition: all 0.5s;
+        top: 5px;
+        right: 5px;
+        &:hover{
+          font-weight: bold;
+        }
+      }
+      a:nth-child(2){
+        margin-bottom: 12px;
+        display: flex;
+        & > img.attachment-woocommerce_thumbnail,
+        & > img.woocommerce-placeholder{
+          width:50px;
+          height: 50px;
+          margin-right: 12px;
+        }
+        span.quality{
+
+        }
+      }
+    }
+  }
+
+  &  p{
+    background-color: darken(lightyellow , 10%);
+    margin-bottom: 0;
+  }
+  &  p.woocommerce-mini-cart__total{
+    padding: 10px  5px 0 5px;
+  }
+
+  &  p.woocommerce-mini-cart__buttons{
+    padding: 10px  5px 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    &> a{
+      @extend %btn;
+      margin-top: 8px;
+      margin-left: 5px;
+    }
+    &> a.wc-forward{
+      @extend  %btn_dark;
+    }
+    & > a.wcppec-cart-widget-button{
+
+    }
+
+  }
+
+
+}
+
+
+// recent view  products widget;
+section.widget.widget_recently_viewed_products{
+  ul.product_list_widget{
+    &>li>a{
+     &:before{
+
+     }
+    }
+    span.woocommerce-Price-amount{
+      margin-top: 15px;
+      display: block;
+    }
+  }
+}
+
+// end widget cart Woo

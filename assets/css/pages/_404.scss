@@ -1,0 +1,9 @@
+form.search-form{
+  @extend  %search_form;
+}
+.search-form-wrapper-404-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto 15px auto;
+}

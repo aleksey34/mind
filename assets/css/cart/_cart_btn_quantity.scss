@@ -1,0 +1,27 @@
+.quantity{
+  margin-top: 10px;
+  &>input{
+    height: 35px;
+    width: 35px;
+  }
+  #smntcswcb{
+    width: 35px;
+    height: 35px;
+    text-indent: 2px;
+    border: 1px solid  lighten($black ,50% );
+    border-radius: 2px;
+    transition: all 0.5s;
+    cursor:pointer;
+    text-align: center;
+    &:hover{
+      color: #fff;
+      background: lighten($black , 20%);
+      transition: all 0.5s;
+     // text-indent: 2px;
+
+    }
+  }
+  label.screen-reader-text{
+    display:none ;
+  }
+}

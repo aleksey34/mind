@@ -1,0 +1,16 @@
+.pagination-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 15px auto 15px auto;
+  @extend  %wp_pagination;
+}
+
+
+nav.woocommerce-pagination{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %woo_pagination;
+
+}

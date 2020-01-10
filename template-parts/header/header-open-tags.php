@@ -3,7 +3,7 @@
 
 
 ?>
-<div class="container container-header"
+<div class="container container-header">
 
 	<div class="row">
 		<header class="col-12">

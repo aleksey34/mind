@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$wp-color-gray-light-500".
-        on line 8 of style.scss
+        on line 7 of style.scss
 
+2:    Multiselect
 3:    ========================================================================== *\/
 4: 
 5: .cf-multiselect__control {
-6: 	height: 30px;
-7: 	min-height: 0;
-8: 	border-color: $wp-color-gray-light-500;
-9: 
-10: 	&:hover {
-11: 		border-color: $wp-color-gray-light-500;
-12: 	}
-13: 
+6: 	min-height: 0;
+7: 	border-color: $wp-color-gray-light-500;
+8: 
+9: 	&:hover {
+10: 		border-color: $wp-color-gray-light-500;
+11: 	}
+12: 
 
 Backtrace:
-style.scss:8
+style.scss:7
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -67,4 +67,4 @@ C:/Ruby24-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$wp-color-gray-light-500\".\A         on line 8 of style.scss\A \A 3:    ========================================================================== */\A 4: \A 5: .cf-multiselect__control {\A 6: 	height: 30px;\A 7: 	min-height: 0;\A 8: 	border-color: $wp-color-gray-light-500;\A 9: \A 10: 	&:hover {\A 11: 		border-color: $wp-color-gray-light-500;\A 12: 	}\A 13: "; }
+  content: "Error: Undefined variable: \"$wp-color-gray-light-500\".\A         on line 7 of style.scss\A \A 2:    Multiselect\A 3:    ========================================================================== */\A 4: \A 5: .cf-multiselect__control {\A 6: 	min-height: 0;\A 7: 	border-color: $wp-color-gray-light-500;\A 8: \A 9: 	&:hover {\A 10: 		border-color: $wp-color-gray-light-500;\A 11: 	}\A 12: "; }

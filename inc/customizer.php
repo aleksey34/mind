@@ -58,7 +58,7 @@ function mind_customize_partial_blogdescription() {
 // BG
 function mind_customize_partial_blogbackground(){
 echo 	"<style>
-body{background: fixed url('".get_theme_mode('blogbackground')."'} repeat;
+body{background: fixed url('".get_theme_mod('blogbackground')."' repeat;}
 	</style>";
 }
 
@@ -84,6 +84,16 @@ function mind_customize_register_footer($wp_customize){
 	));
 
 
+	//============================= footer background
+	$wp_customize->add_setting('footer_background' , array(
+		"transport" => "postMessage",
+		"default" => ""
+	));
+//	$wp_customize->add_setting('footer_background_position' , array(
+//		"transport" => "postMessage",
+//		"default" => ""
+//				));
+// end footer background
 
 
 	$wp_customize->add_setting("footer_about_us_content" , array(
@@ -134,6 +144,27 @@ function mind_customize_register_footer($wp_customize){
 	) );
 
 // add icon for change for customizer
+
+	//============================================= footer background
+	$wp_customize->selective_refresh->add_partial(
+		'footer_background' ,
+		[
+			//'selector' =>
+			'render_callback' => 'mind_customize_partial_footer_background'  ,
+		]
+	);
+//	$wp_customize->selective_refresh->add_partial(
+//		'footer_background_position' ,
+//		[
+//			//'selector' =>
+//			'render_callback' => 'mind_customize_partial_footer_background'  ,
+//		]
+//	);
+	function mind_customize_partial_footer_background(){
+		echo 	"<style>.footer{background-image: url(".get_theme_mod('footer_background').");} </style>";
+	}
+// end footer background
+
 
 	// copyright
 	$wp_customize->selective_refresh->add_partial(
@@ -259,6 +290,27 @@ function mind_customize_register_footer($wp_customize){
 
 	// end add icon for change settings
 
+	//=============================== add control footer background
+	$wp_customize->add_control(new WP_Customize_Image_Control(
+		$wp_customize , "footer_background" ,
+		array(
+			"label"=> __("Footer Background" , "mind"),
+			"section"=> "footer_settings" ,
+			"settings"=> "footer_background",
+			"type"=> "image"
+		)
+	));
+//		$wp_customize->add_control(new WP_Customize_Background_Position_Control(
+//		$wp_customize , "footer_background_position",
+//		array(
+//			"label"=> __("Footer Background Position" , "mind"),
+//			"section"=> "footer_settings" ,
+//			"settings"=> "footer_background_position",
+//			"type"=> "image"
+//		)
+//				));
+
+	// and footer background
 
 	// section about us controls
 

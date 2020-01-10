@@ -10,13 +10,12 @@
 
 .cf-datetime__input {
   flex: 1;
-  margin: 0; }
+  margin: 0;
+  margin-right: 6px; }
 
 .cf-datetime__button {
   flex: 0 0 auto; }
   .cf-field .cf-datetime__button {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     margin-bottom: 0;
     box-shadow: none; }
 

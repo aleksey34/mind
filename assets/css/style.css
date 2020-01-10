@@ -2237,11 +2237,6 @@ li.product.type-product {
   margin: 2rem 0; }
 
 /* Footer */
-.footer {
-  background-image: url("../img/footer.png");
-  background-size: cover;
-  background-position: center; }
-
 .footer__inner {
   display: flex;
   flex-wrap: wrap;

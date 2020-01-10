@@ -1,4 +1,3 @@
-
 <section class="page-section section page-section__teachers">
 	<div class="page-container">
 		<?php if(function_exists('carbon_get_the_post_meta')) :  ?>
@@ -76,4 +75,5 @@
 			wp_reset_query();
 			?>
 		</div>
+    </div>
 </section>

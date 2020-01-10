@@ -7,13 +7,16 @@
  */
 
 ?>
-
-<footer class="footer">
-
+<?php  $footer_background_url = get_theme_mod("footer_background");
+if(isset($footer_background_url) && !empty($footer_background_url)){
+	$footer_background_img  =  'background-image: url("'.$footer_background_url.'")';
+}
+;
+?>
+<footer class="footer" style=' <?php echo $footer_background_img ;  ?> ;
+background-size: cover; background-position: center;'>
     <div class="container">
-
         <div class="footer__inner">
-
             <div class="footer__col footer__col--first">
                 <h2 class="footer__suptitle footer-about-us_title"><?php  echo get_theme_mod("footer_about_us_column_title");  ?></h2>
                 <p class="footer__text footer-about-us_content">
@@ -33,9 +36,7 @@
                         </a>
                     </div>
                 </div>
-
             </div>
-
             <div class="footer__col footer__col--second">
                 <div class="footer-menu-block">
                     <h2 class="footer__suptitle footer-menu-title"><?php  echo get_theme_mod("footer_menu_column_title"); ?></h2>
@@ -44,7 +45,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="footer__col footer__col--third">
                 <h2 class="footer__suptitle  footer-contact-title"><?php  echo get_theme_mod("footer_contact_column_title");  ?></h2>
                 <?php 	$footer_email = get_theme_mod("footer_contact_email");
@@ -68,22 +68,15 @@
                 <p class="footer__text"><i class="fab fa-skype"></i> <span class="footer-contact-skype"><?php echo  $footer_skype;   ?></span></p>
                 <?php endif;   ?>
             </div>
-
-
         </div>
-
-
     </div>
-
     <div class="divider"></div>
-
     <div class="copyright site-footer-copyright">
 		    <?php
 		    echo get_theme_mod("footer_copyright");
 		    ?>
 <!--        © 2016 MoGo free PSD template by  <span>Laaqiq</span>-->
     </div>
-
     </div>
 </footer>
 <?php

@@ -9,8 +9,8 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area container">
+<div class="background404"></div>
+	<div id="primary" class="content-area container container-page-404 woocommerce-product-details__short-description">
 		<main id="main" class="site-main row">
 
 			<section class="error-404 not-found  col-12 col-md-7 col-lg-8">
@@ -56,7 +56,6 @@ get_header();
 	            ?>
 
             </div>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

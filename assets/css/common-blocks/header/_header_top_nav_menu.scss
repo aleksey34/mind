@@ -18,28 +18,48 @@
   right: 0;
   left: 0;
   z-index: 1030;
+  transition: all 0.5s;
 
-  .current-menu-item > .nav-link{
+  .current-menu-item > .nav-link , .current-menu-item-scroll > .nav-link{
     // imtoptant for change style of bootstrap
-    color: black !important;
+   // color: black !important;
     @extend %transition_middle;
   }
 }
 .top-navbar-scroll-fixed{
   position: fixed;
   top:-9px ;// why??
+  transition: all 0.5s;
+  &  nav.navbar.top-navbar{
+    // for 100% width on top positon
+    position: absolute;
+    width: 100vw; left:0 ; right:0;
+    transition: all 0.5s;
+  }
+
+
 }
 .admin-bar .top-navbar-scroll-fixed{
   position: fixed;
   //top: 32px;
   top: 24px;
+  transition: all 0.5s;
 }
 
 //end navbar
+
 // default style and replace inline style
 .header-nav {
-  & > nav{
-    background-color: transparent;
+  transition: all 0.5s;
+  width: 100%;
+  & > nav.navbar.top-navbar{
+  //  background-color: transparent;
+   // width: 100%;
+    transition: all 0.5s;
+    background-color: rgba( darken(#fff , 10%) , 0.6) !important ; // Sorry / need important here!
+    &:hover{
+      background-color: rgba( darken(#fff , 10%) , 0.8) !important ; // Sorry / need important here!
+    }
     .menu{
       border-bottom: none;
     }
@@ -51,9 +71,20 @@
   padding-left: 0;
   padding-right: 0;
   height: 100%;
-  background: darken(#fff , 25%);
   transition: all 0.5s;
   position: relative;
+  &:before{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -0.55rem;
+    background-color: lighten(black , 10%);
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+  }
   a{
     outline: none;
     border: none;
@@ -61,16 +92,18 @@
   }
 }
 .header-nav li.nav-item.current-menu-item,
+.header-nav li.nav-item.current-menu-item-scroll,
 .header-nav  li.nav-item:hover,
 .header-nav li.dropdown.show{
-  background: darken(#fff , 30%);
+  background: rgba(lighten(#000 , 10%) , 0.7);
   transition: all 0.5s;
-  box-shadow: inset 2px 2px 3px  rgba($black , .35);
+  &:before{
+   opacity: 1;
+  }
 
   & > a{
-    color: #fff !important; // sory cannot set color -- bootstrfp?? need fix
+    color: #fff !important; // sorry cannot set color -- bootstrfp?? need fix
     transition: all 0.5s;
-   // text-shadow: 1px 1px 2px black;
   }
 }
 .header-nav li.dropdown.show > a.nav-link.dropdown-toggle{
@@ -79,7 +112,11 @@
 }
 
 .header-nav  ul.menu > li.nav-item  {
-@include  btn_underline_hover_active(rgba(lighten($black , 40%) , 0.9) , rgba(gray , 1) )
+//@include  btn_underline_hover_active(rgba($black  , 1) , rgba( $black , 1) ) ;
+//  &:before , &:after{
+//    box-shadow: none;
+//    height: 2px;
+//  }
 }
 
 //.header-nav ul.menu > li.nav-item.current-menu-item {
@@ -103,11 +140,11 @@
     padding: 4px 6px 4px 6px ;
     &:hover{
       transition: all 0.5s;
-      background-color: lighten($black , 30%);
+     background-color: lighten($black , 30%);
     }
     &:hover > span ,
     &:hover > i{
-      color: lighten( $black , 80%);
+     color: lighten( $black , 80%);
       transition: all 0.5s;
     }
     &:first-child{
@@ -123,11 +160,16 @@
 // media
 @media (max-width: 991.98px) {
   .header-nav ul.menu > li.nav-item.current-menu-item:before,
+  .header-nav ul.menu > li.nav-item.current-menu-item-scroll:before,
   .header-nav ul.menu >  li.nav-item:hover:before{
     width: 0;
   }
   .header-nav ul.menu{
     display: block;
+  }
+
+  .header-nav li.nav-item{
+    background: rgba( darken(#fff , 10%) , 0.8);
   }
 
 
@@ -138,5 +180,12 @@
 @media (max-width: 782px) {
   .admin-bar .top-navbar-scroll-fixed{
     top: 40px;
+    transition: all 0.5s;
   }
+
+  .header-nav li.nav-item{
+    background: rgba( darken(#fff , 10%) , 0.8);
+  }
+
+
 }

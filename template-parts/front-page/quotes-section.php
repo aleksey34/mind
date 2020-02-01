@@ -1,8 +1,9 @@
+<?php  if(!defined("ABSPATH")) exit; ?>
 <?php if(function_exists('carbon_get_the_post_meta')):
 	$quote_blocks = carbon_get_the_post_meta('crb_front_page_quotes_section_quotes_block');
 	if(isset($quote_blocks) && !empty($quote_blocks)) :
 		?>
-		<section class="page-section page-section__quotes">
+		<section id="frontPageQuotes" class="page-section page-section__quotes">
 			<div id="carouselExampleCaptionsQuote" class="carousel slide" data-ride="carousel">
 				<ol  class="carousel-indicators">
 					<?php for($i=0; $i< count($quote_blocks) ; $i++) : ?>
@@ -22,4 +23,5 @@
 				</div>
 			</div>
 		</section>
+        <div class="divider"></div>
 <?php endif; endif; ?>

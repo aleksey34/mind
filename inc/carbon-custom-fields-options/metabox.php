@@ -20,16 +20,19 @@ use Carbon_Fields\Field;
 /**
  * front page
  */
-Container::make( 'post_meta', esc_html__("Top Section", "mind")   )
+Container::make( 'post_meta', esc_html__("Intro Section", "mind")   )
          ->where('post_type' , '=' , 'page')
          ->where( 'post_template', '=', 'template-pages/front-page.php' )
          ->add_fields( array(
-	         Field::make( 'text', 'crb_front_page_top_section_title' ,esc_html__("Top section - Title", "mind") ),
-	         Field::make( 'text', 'crb_front_page_top_section_subtitle' ,esc_html__("Top section - Subtitle", "mind") ),
-	         Field::make( 'text', 'crb_front_page_top_section_btn_title' ,esc_html__("Top section - button title", "mind") ),
-	         Field::make( 'image', 'crb_front_page_top_section_video_link' ,esc_html__("Top section - Video Link", "mind") )
+	         Field::make( 'text', 'crb_front_page_intro_section_title' ,esc_html__("Intro section - Title", "mind") ),
+	         Field::make( 'text', 'crb_front_page_intro_section_subtitle' ,esc_html__("Intro section - Subtitle", "mind") ),
+	         Field::make( 'text', 'crb_front_page_intro_section_btn_title' ,esc_html__("Intro section - button title", "mind") ),
+	         Field::make( 'image', 'crb_front_page_intro_section_video_link' ,esc_html__("Intro section - Video Link", "mind") )
 		         ->set_value_type("url")
 		         ->set_type( array( 'video' ) ),
+	         Field::make( 'image', 'crb_front_page_intro_section_video_poster' ,esc_html__("Intro section - Poster for video", "mind") )
+		         ->set_value_type("url")
+		         ->set_type( array( 'image' ) ),
          ));
 
 Container::make( 'post_meta', esc_html__("Benefit Section", "mind")   )
@@ -129,7 +132,8 @@ Container::make( 'post_meta', esc_html__("Books Section", "mind")   )
 
 Container::make( 'post_meta', esc_html__("Map Section", "mind")   )
          ->where('post_type' , '=' , 'page')
-         ->where( 'post_template', '=', 'template-pages/front-page.php' )
+         ->where( 'post_template', '=','template-pages/front-page.php' )
+         ->or_where( 'post_template', '=', 'template-pages/template-about.php' )
          ->add_fields( array(
 	         Field::make( 'text', 'crb_front_page_map_section_map_iframe' ,esc_html__("Map section - Map iframe", "mind") ),
          ));
@@ -165,4 +169,18 @@ Container::make( 'post_meta', esc_html__("Social Links", "mind")   )
 	         Field::make( 'text', 'crb_teachers_twitter_link' ,esc_html__("Twitter Link", "mind") ),
 	         Field::make( 'text', 'crb_teachers_vk_link' ,esc_html__("VK Link", "mind") ),
 	         Field::make( 'text', 'crb_teachers_instagram_link' ,esc_html__("Instagram Link", "mind") ),
+	         Field::make( 'text', 'crb_teachers_youtube_link' ,esc_html__("Youtube Link", "mind") ),
          ));
+
+/**
+ * Page About -- template-about.php
+ */
+Container::make( 'post_meta', esc_html__("Contact Form Shortcode Section", "mind")   )
+         ->where('post_type' , '=' , 'page')
+         ->where( 'post_template', '=','template-pages/template-about.php' )
+         ->add_fields( array(
+	         Field::make( 'text', 'crb_about_page_contactform_shortcode' ,esc_html__("Contact Form Shortcode", "mind") ),
+         ));
+
+
+

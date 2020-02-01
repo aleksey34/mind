@@ -51,6 +51,12 @@
 // widget woo
 section.widget.woocommerce{
 
+  // cart widget
+  .woocommerce-mini-cart{
+    .woocommerce-mini-cart-item.mini_cart_item{
+      padding-left: 15px;
+    }
 
+  }
 
 }

@@ -67,9 +67,9 @@
 /* Header */
 .header {
   width: 100%;
-  padding-top: 30px;
+  padding-intro: 30px;
   position: absolute;
-  top: 0;
+  intro: 0;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -97,7 +97,7 @@
 
 .page-menu-item	{
   display: inline-block;
-  vertical-align: top;
+  vertical-align: intro;
   margin: 0 30px;
   position: relative;
 
@@ -116,7 +116,7 @@
   opacity: 0;
 
   position: absolute;
-  top: 100%;
+  intro: 100%;
   left: 0;
   z-index: 1;
 
@@ -133,7 +133,7 @@
 
 .page-sub-menu > li {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: intro;
   margin: 0 30px;
   position: relative;
 
@@ -146,7 +146,7 @@
 
   .btn {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: intro;
     padding: 10px 15px;
 
     background-color: rgba(#419585 , 0.5);
@@ -176,7 +176,7 @@
 }
 
 .page-section-header {
-  width: 100;
+ // width: 100px;
   max-width: 950px;
   margin: 0 auto 50px;
 
@@ -188,7 +188,6 @@
   font-size: 30px;
   font-weight: 500;
   color: #333;
-
 }
 
 .page-section-subtitle {
@@ -214,28 +213,34 @@
 
 .services {
   display: flex;
-  margin-left: 100px;
-  margin-top: 50px;
+ // margin-left: 100px;
+  margin-intro: 50px;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .services__item {
-  flex: 1 1;
+  flex: 0 0 300px;
   padding-left: 109px;
   padding-right: 151px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 27px;
+
+
 }
 
 .services__icon {
   position: absolute;
-  top: 0;
+  intro: 0;
   left: 10px;
   z-index: 1;
-  transition: top .2s linear;
+  transition: intro .2s linear;
 }
 
 .services__icon:hover {
-  top: -5px;
+  intro: -5px;
 }
 
 .services__title {
@@ -255,6 +260,7 @@
 .services__text {
   font-size: 15px;
   color: #999;
+  min-width: 300px;
 }
 
 
@@ -268,7 +274,7 @@
   width: 100%;
 //  background: #2B2A32; //
 }
-.about__item{
+.about__post-item{
   .page-section-title__news{
     font-family: 'Exo 2', sans-serif;
     font-size: 20px;
@@ -289,7 +295,7 @@
 /* Text */
 
 
-.page-section-subtitle__nuws{
+.page-section-subtitle__news{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -301,7 +307,7 @@
 }
 
 /* About */
-.about {
+.about-post-items{
   max-width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -310,7 +316,7 @@
   margin: 0 20px;
 }
 
-.about__item {
+.about__post-item {
   text-align: center;
 
   /*border: 1px solid silver;*/
@@ -322,7 +328,7 @@
  // height: 400px;
   text-align: center;
   height: auto;
-  border-radius: 90px;
+  border-radius: 8px;
   border: 3px solid rgba(#419585 , 0.5);
   box-shadow: 0 0 7px rgba(#419585 , 0.5);
 }
@@ -342,7 +348,7 @@
 
 /*---------------------- Об учителя -------------------------------*/
 .teachers{
-  margin-top: 80px;
+  margin-intro: 80px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -402,14 +408,15 @@
 }
 
 .teachers__info{
-  margin-top: 20px;
-
+  margin-intro: 20px;
+  cursor: pointer;
   text-align: center;
 }
 
 .teachers__name{
   font-size: 14px;
   color: #333;
+  padding-top: 13px;
   text-transform: uppercase;
 }
 
@@ -422,15 +429,16 @@
 .teacher-description{
   text-align: left;
 }
-/*-----------Social---------------*/
+/*-----------teacher-social---------------*/
 
-.social {
+.teacher-social {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-.social__item{
+.teacher-social__item{
   width: 55px;
   height: 50px;
   padding: 12px 10px;
@@ -446,11 +454,11 @@
   transition: background .1s linear, color .1s linear;
 }
 
-.social__item:last-child {
+.teacher-social__item:last-child {
   border-right: 0;
 }
 
-.social__item:hover {
+.teacher-social__item:hover {
   color: #fff;
   background-color: #36add4;
 }
@@ -462,10 +470,20 @@
 
 .logos{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
-
+.logos{
+  padding: 0 40px 0;
+  & .logos__item{
+    width:  auto;
+    height:150px;
+    &>img{
+      max-width: 100%;
+      height: 100%
+    }
+  }
+}
 
 /*  rates */
 
@@ -484,7 +502,7 @@
 //  transform: rotate(45deg);
 //  padding: 10px 40px;
 //  position: absolute;
-//  top: 16px;
+//  intro: 16px;
 //  right: -34px;
 //}
 
@@ -554,7 +572,7 @@ li.product.type-product{
   border-radius: 50%;
 
   position: absolute;
-  top: 0;
+  intro: 0;
   left: 0;
   z-index: 1;
   max-width: 20%;
@@ -591,7 +609,7 @@ li.product.type-product{
 
 /*  Statistics */
 .page-section.page-section__books{
-  margin-top: 0;
+  margin-intro: 0;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
@@ -643,7 +661,7 @@ li.product.type-product{
   display: flex;
   justify-content: space-between;
   text-align: center;
-  border-top: 2px solid rgba(#6f6f6f , 0.5);
+  border-intro: 2px solid rgba(#6f6f6f , 0.5);
   border-bottom: 2px solid rgba(#6f6f6f , 0.5);
 }
 
@@ -714,7 +732,7 @@ flex: 1 1 100%;
 
   }
   .modal-footer{
-    margin-top: 1rem;
+    margin-intro: 1rem;
     margin-bottom: 1rem;
   }
   img.testimonial-thumbnail-modal{
@@ -776,14 +794,14 @@ flex: 1 1 100%;
   /* 5 */
 
   .teachers{
-    margin-top: 30px;
+    margin-intro: 30px;
   }
   .teachers__item{
     width: 310px;
   }
 
 
-  .social__item{
+  .teacher-social__item{
     width: 40px;
     height: 40px;
     padding: 9px 10px;
@@ -819,7 +837,7 @@ flex: 1 1 100%;
   .reviews__photo{
     max-width: 15%;
     //margin: -24px 40px;
-  top: 5px;
+  intro: 5px;
     left:10px;
   }
 
@@ -903,8 +921,11 @@ flex: 1 1 100%;
   .services{
     margin-left: 46px;
   }
+  .services__text{
+    min-width: 200px;
+  }
   /*4*/
-  .about{
+  .about-post-items{
     justify-content: space-evenly;
     margin: 0;
   }
@@ -915,14 +936,14 @@ flex: 1 1 100%;
   /* 5 */
 
   .teachers{
-    margin-top: 30px;
+    margin: 30px;
   }
   .teachers__item{
     width: 310px;
   }
 
 
-  .social__item{
+  .teacher-social__item{
     width: 40px;
     height: 40px;
     padding: 9px 10px;
@@ -931,6 +952,9 @@ flex: 1 1 100%;
 
   .logos{
     padding: 0 40px 0;
+    .logos__item{
+      margin-bottom: 30px;
+    }
   }
 
   // products
@@ -1012,7 +1036,7 @@ flex: 1 1 100%;
     transition: all 0.5s;
   }
 }
-.section-top-modal{
+.section-intro-modal{
   z-index: 999999;
 }
 .page-section{
@@ -1039,6 +1063,4 @@ flex: 1 1 100%;
 margin:  2rem 0;
 
 }
-
-
 

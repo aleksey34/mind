@@ -22,14 +22,16 @@
         <?php  else:  ?>
          </a>
        <?php endif; ?>
-
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="collapse navbar-collapse  <?php  echo $is_front_page ? 'front-page-top-menu' : '' ; ?>" id="navbarSupportedContent">
 			<?php
-			mind_the_top_menu();
+            if($is_front_page){
+	           mind_the_front_page_menu();
+            }else{
+	            mind_the_top_menu();
+            }
 			?>
 			<?php if(is_user_logged_in()) :  $current_user = wp_get_current_user() ; ?>
             <div class="header-nav-menu-name-logout">

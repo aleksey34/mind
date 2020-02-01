@@ -14,3 +14,10 @@ nav.woocommerce-pagination{
   @extend %woo_pagination;
 
 }
+
+//pagination in post -- break page
+.pagination-page_title{
+  margin-right: 14px;
+  display: inline-block;
+  padding-top: 11px;
+}

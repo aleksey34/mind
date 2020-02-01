@@ -6,125 +6,94 @@ Template Name: Template About
 get_header();
 
 ?>
-
-
-
 <!--about us -->
-<section class="container-fluid">
-	<div class="row">
-		<div class="col-12">
-			<h3 class="text-center">About us</h3>
-		</div>
-		<div class="col-12">
+<div class="container  woocommerce-product-details__short-description">
+    <div class="row about-body">
+        <div class="col-12">
+	        <?php if(have_posts()):
+		        while (have_posts()) : the_post();
+			        ?>
+	                <?php the_post_thumbnail();  ?>
+			        <?php the_title();  ?>
+			        <?php the_content(); ?>
+		        <?php
+		        endwhile;
+	        endif;
+	        ?>
+        </div>
 
-			<div class="container-fluid" >
-				<div class="row">
-					<div class="col-12 col-md-7 col-lg-8 order-last  order-md-first">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad, assumenda consectetur dolorum, error, facilis ipsum magni possimus quas sit tempore ullam!</p>
-					</div>
-					<div class="col-12 col-md-5 col-lg-4 order-first order-md-last">
-						<img class="image-fluid" src="http://lorempixel.com/200/100/sports/" alt="img">
-					</div>
-				</div>
-			</div>
+		<div class="col-12 col-lg-6">
+			<div class="about-contact-data-wrap">
+                <h3 class="about-contact-form__title">Мои Контакты:</h3>
+                <ul class="list-group list-group-flush">
+	                <?php 	$footer_email = get_theme_mod("footer_contact_email");
+	                if(isset($footer_email) && !empty($footer_email)) : ?>
+                    <li class="list-group-item  list-group-item-action">
+                        <a href="<?php echo $footer_email;  ?>" class="about__text__mail">
+                            <i class="fas fa-envelope-open-text"></i>&emsp;
+                            <span class="about-contact-email">
+                                <?php 	echo  $footer_email; ?>
+                            </span>
+                        </a>
+                    </li>
+                    <?php endif; ?>
+	                <?php
+	                $footer_phone = get_theme_mod("footer_contact_phone");   ;
+	                if(isset($footer_phone) && !empty($footer_phone)) : ?>
+                    <li class="list-group-item  list-group-item-action">
+                          <span class="about__text">
+                              <i class="fas fa-phone"></i>&emsp;
+                              <span class="about-contact-phone">
+                                  <?php echo $footer_phone;  ?>
+                              </span>
+                          </span>
+                    </li>
+                    <?php endif; ?>
+	                <?php
+	                $footer_address = get_theme_mod("footer_contact_address");   ;
+	                if(isset($footer_address) && !empty($footer_address)) : ?>
+                    <li class="list-group-item  list-group-item-action">
+                            <span class="about__text">
+                                <i class="fas fa-map-marker-alt"></i>&emsp;
+                                <span class="about-contact-address">
+                                    <?php echo $footer_address;   ?>
+                                </span>
+                            </span>
+                    </li>
+                     <?php  endif; ?>
+	                <?php
+	                $footer_skype = get_theme_mod("footer_contact_skype");   ;
+	                if(isset($footer_skype) && !empty($footer_skype)) : ?>
+                    <li class="list-group-item  list-group-item-action">
+                            <span class="about__text">
+                                <i class="fab fa-skype"></i>&emsp;
+                                <span class="about-contact-skype">
+                                    <?php echo  $footer_skype;   ?>
+                                </span>
+                            </span>
+                    </li>
+                      <?php endif; ?>
+                </ul>
+            </div>
 		</div>
+
+        <?php
+         if(function_exists('carbon_get_the_post_meta')):
+	         $cf7_shortcode = '';
+	         $cf7_shortcode =  carbon_get_the_post_meta('crb_about_page_contactform_shortcode');
+            if(isset($cf7_shortcode) && !empty($cf7_shortcode) ) : ?>
+        <div class="col-12 col-lg-6">
+            <div class="about-contact-form-wrap ">
+                <h3 class="about-contact-form__title">Напишите мне</h3>
+                <?php echo do_shortcode("$cf7_shortcode") ; ?>
+            </div>
+		</div>
+        <?php endif;  endif; ?>
 	</div>
-</section>
-
-<!--our work-->
-<section class="container-fluid">
-	<div class="row">
-		<div class="col-12">
-			<h3 class="text-center">Lorem ipsum dolor sit.</h3>
-		</div>
-		<div class="col-6">
-			<h4>Lorem ipsum dolor sit.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem provident rem unde.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi eos nulla!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque debitis labore laborum.</p>
-		</div>
-		<div class="col-md-6 col-12">
-			<h4>Lorem ipsum dolor sit amet.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam consequatur eligendi iure natus officia.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ea, laboriosam nobis omnis pariatur repudiandae?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nostrum possimus quaerat quia reprehenderit temporibus?</p>
-		</div>
-		<div class="col-md-6 col-12">
-			<h4>Lorem ipsum dolor sit amet.</h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam consequatur eligendi iure natus officia.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ea, laboriosam nobis omnis pariatur repudiandae?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nostrum possimus quaerat quia reprehenderit temporibus?</p>
-		</div>
-		<div class="col-md-6 col-12">
-			<h3>Lorem ipsum dolor sit amet.</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquam consequatur eligendi iure natus officia.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ea, laboriosam nobis omnis pariatur repudiandae?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse nostrum possimus quaerat quia reprehenderit temporibus?</p>
-		</div>
-	</div>
-</section>
-
-
-
-<!--recent our webinar for  sale-->
-<section class="container-fluid">
-	<div class="col-12">
-		<h3  class="text-center">Lorem ipsum dolor sit.</h3>
-	</div>
-	<div class="row">
-		<div class="col-12 col-md-6 col-lg-4">
-card  price webinar
-		</div>
-		<div class="col-12 col-md-6 col-lg-4">
-
-		</div>
-		<div class="col-12 col-md-6 col-lg-4">
-
-		</div>
-		<div class="col-12 col-md-6 col-lg-4">
-
-		</div>
-	</div>
-</section>
-
-<!--about based persons-->
-<section class="container-fluid">
-	<div class="col-12">
-		<h3 class="text-center">Lorem ipsum dolor sit.</h3>
-	</div>
-	<div class="row">
-		<div class="col-12">
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut ducimus nihil provident!</div>
-			<div>
-				<img class="image-fluid" src="http://lorempixel.com/200/100/sports/" alt="img">
-			</div>
-		</div>
-		<div class="col-12">
-			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur perferendis rerum sint.</div>
-			<div>
-				<img class="image-fluid" src="http://lorempixel.com/200/100/sports/" alt="img">
-			</div>
-		</div>
-	</div>
-</section>
-
-
-
-<!--map of resent events?? -->
-<section class="container-fluid">
-	<div class="row">
-		<div class="col-12">
-			<h3 class="text-center">Lorem ipsum dolor sit. MAP</h3>
-		</div>
-		<div class="col-12">
-			<img class="img-fluid w-100" src="http://lorempixel.com/800/400/city" alt="MAP">
-		</div>
-	</div>
-</section>
-
-
+</div>
 <?php
+// _________________СЕКЦИЯ____________________ MAP
+ get_template_part('template-parts/front-page/map-section');
 
 get_footer() ;
-
 ?>

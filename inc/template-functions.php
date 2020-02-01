@@ -35,3 +35,25 @@ function mind_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'mind_pingback_header' );
+
+// custom change
+/**
+ * hide admin bar panel except admin
+ */
+// 21. Disable admin bar for all users but admins in the front end
+if(!is_admin()){
+
+	show_admin_bar(false);
+}
+
+
+// 17. Remove WordPress version from Head
+function remove_version_from_head()
+{
+	return '';
+}
+add_filter('the_generator', 'remove_version_from_head');
+
+// 18. Remove login error message on login page
+//add_filter('login_errors',create_function('$a', "return null;"));
+add_filter('login_errors', '__return_null' );

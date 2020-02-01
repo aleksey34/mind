@@ -14,6 +14,7 @@ add_filter( "admin_footer_text" , "mind_admin_remove_copyright_wordpress" );
 /**
  * change top icon wordpress
  */
+/*
 function mind_admin_change_toolbar(){
 global  $wp_admin_bar;
 
@@ -38,3 +39,4 @@ $wp_admin_bar->remove_node("wp-logo");
 
 }
 add_action("admin_bar_menu" , "mind_admin_change_toolbar" , 40);
+*/

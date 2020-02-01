@@ -1,3 +1,4 @@
+<?php  if(!defined("ABSPATH")) exit; ?>
 <?php
 if(have_posts()){
 	while (have_posts()){
@@ -7,5 +8,5 @@ if(have_posts()){
 		the_content();
 	}
 }
-//wp_reset_postdata();
-wp_reset_query();
+wp_reset_postdata();
+//wp_reset_query();

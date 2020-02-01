@@ -25,15 +25,9 @@ jQuery(document).on("ready" , function ($) {
                     let noSearchResultHtml = "<ul class=\"search-result-list\" ><li>Ничего не найдено</li></ul>";
                     jQuery(".search-result").html(noSearchResultHtml);
                 }
-
             }
         };
-
         jQuery.ajax(ajaxSettings);
 
-
-
     });
-
-
 });

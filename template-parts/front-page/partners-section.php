@@ -1,5 +1,6 @@
+<?php  if(!defined("ABSPATH")) exit; ?>
 <?php if(function_exists('carbon_get_the_post_meta')):  ?>
-	<section class="page-section section section--gray page-section__partners">
+	<section id="frontPagePartners" class="page-section section section--gray page-section__partners">
 		<div class="page-container">
 			<div class="page-section-header">
 				<?php $partners_section_title = carbon_get_the_post_meta('crb_front_page_partners_section_title');
@@ -23,4 +24,5 @@
 			</div>
 		</div>
 	</section>
+    <div class="divider"></div>
 <?php  endif; ?>

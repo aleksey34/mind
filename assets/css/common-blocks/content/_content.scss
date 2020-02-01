@@ -46,3 +46,13 @@ article.archive-post-page  , article.single-post-page{
   }
 }
 
+.entry-meta > a , .front-page-categories-list-item{
+  display: inline-block;
+  padding: 3px 6px;
+  background-color: lightyellow;
+  transition: all 0.5s;
+  border-radius: 3px;
+  &:hover{
+    background-color: darken(lightyellow , 15%);
+  }
+}

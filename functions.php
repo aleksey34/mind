@@ -9,7 +9,7 @@
 
 
 /**
- * Carbon fields init  --- remove - think to change to ACF
+ * Carbon fields init
  */
 require_once  get_template_directory() . "/inc/carbon-fields-init.php";
 
@@ -146,8 +146,16 @@ require_once  get_template_directory() . "/inc/custom-post-type-init/teachers-in
 // change label post type - post  -- заметки
 require_once  get_template_directory() . "/inc/custom-post-type-init/posts-change-labels.php";
 
+
 /**
- * Gutenberg Register Custom Blocks
+ *
+ * register shortcodes  for theme
  */
-//require_once  get_template_directory() . "/gutenberg/init_custom_gutenberg_block_alerts.php";
+require_once  get_template_directory() . "/inc/mind_shortcodes_init.php";
+
+
+/**
+ * register and add to theme  blocks gutenberg
+ */
+//require_once  get_template_directory() . "/inc/gutenberg-blocks/index.php";
 

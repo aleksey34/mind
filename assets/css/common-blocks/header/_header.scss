@@ -1,3 +1,20 @@
+// bg for all header and scroll work good - only without admin    top panel
+.main-header-img-custom-background{
+  //position: fixed;
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.5;
+//  background: url("../img/header-bg.jpeg") top center / cover no-repeat;
+}
+.container-header-background{
+ //background: linear-gradient( to bottom , rgba(lighten(#1a1a1a, 40%) , 0.7)   0%  ,   transparent 100% );
+ // background: linear-gradient(to top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
+  width: 100% !important;
+}
+
+
 /*header*/
 .site-title{
   text-align: center;

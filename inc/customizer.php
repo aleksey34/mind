@@ -1,4 +1,5 @@
 <?php
+  if(!defined("ABSPATH")) exit;
 /**
  * mind Theme Customizer
  *
@@ -58,8 +59,7 @@ function mind_customize_partial_blogdescription() {
 // BG
 function mind_customize_partial_blogbackground(){
 echo 	"<style>
-body{background: fixed url('".get_theme_mod('blogbackground')."' repeat;}
-	</style>";
+body{background: fixed url('".get_theme_mod('blogbackground')."') left top / cover  no-repeat;}</style>";
 }
 
 
@@ -71,6 +71,46 @@ function mind_customize_preview_js() {
 }
 add_action( 'customize_preview_init', 'mind_customize_preview_js' );
 
+//-----------------------------------header
+
+function mind_customize_register_header($wp_customize){
+	// add section
+	$wp_customize->add_section("header_settings" , array(
+		"title"=> esc_html__("Header Settings" , "mind"),
+		"priority"=> 25
+	));
+
+	// header background
+	$wp_customize->add_setting('header_background' , array(
+		"transport" => "postMessage",
+		"default" => ""
+	));
+
+	// for show in customizer
+	$wp_customize->selective_refresh->add_partial(
+		'header_background' ,
+		[
+			//'selector' =>
+			'render_callback' => 'mind_customize_partial_header_background'  ,
+		]
+	);
+	function mind_customize_partial_header_background(){
+		echo 	"<style>.main-header-img-custom-background{background-image: url(".get_theme_mod('header_background').");} </style>";
+	}
+
+	// add control
+	$wp_customize->add_control(new WP_Customize_Image_Control(
+		$wp_customize , "header_background" ,
+		array(
+			"label"=> __("Header Background" , "mind"),
+			"section"=> "header_settings" ,
+			"settings"=> "header_background",
+			"type"=> "image"
+		)
+	));
+}
+add_action("customize_register" , "mind_customize_register_header");
+//-------------------end header
 
 //-----------------------------------------------------FOOTER
 /**
@@ -180,8 +220,6 @@ function mind_customize_register_footer($wp_customize){
 	);
 
 	// about us
-
-
 
 	$wp_customize->selective_refresh->add_partial(
 		'footer_about_us_content', // идентификатор настройки
@@ -369,7 +407,7 @@ function mind_customize_register_footer($wp_customize){
 		"type"=> "text"
 	)));
 
-	$wp_customize->add_control(new WP_Customize_Control($wp_customize , "footer_contact_address", array(
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize , "footer_contact_skype", array(
 		"label"=> __("Footer Contact Skype" , "mind"),
 		"section"=> "footer_settings" ,
 		"settings"=> "footer_contact_skype",

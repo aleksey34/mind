@@ -1,4 +1,6 @@
 <?php
+ if(!defined("ABSPATH")) exit;
+
 /**
  *  my account active class adding
  */

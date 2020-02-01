@@ -1,7 +1,10 @@
-<section class="page-section page-section__testimonials section ">
+<?php  if(!defined("ABSPATH")) exit;
+$testimonial_array = array();
+?>
+<section id="frontPageTestimonials" class="page-section page-section__testimonials section ">
 	<div class="page-container">
 		<?php
-        $testimonial_array = [];
+
         if(function_exists('carbon_get_the_post_meta')):  ?>
 			<div class="page-section-header">
 				<?php $testimonials_section_title = carbon_get_the_post_meta('crb_front_page_testimonials_section_title');
@@ -36,8 +39,9 @@
                             $testimonial_array[$testimonial_counter]['title'] = get_the_title();
                             the_title("<h4>" , '</h4>')  ?>
 							<?php
+							the_excerpt();
 							$testimonial_array[$testimonial_counter]['content'] = get_the_content();
-                            the_excerpt();  ?>
+                              ?>
 							<?php
 							if(function_exists('carbon_get_the_post_meta')):
 								$testimonial_footer =  carbon_get_the_post_meta('crb_testimonials_author') ;
@@ -57,8 +61,9 @@
 		</div>
 	</div>
 </section>
-<!--modal testimonials -->
-<?php
+<div class="divider"></div>
+<?php  //modal testimonials
+if(isset($testimonial_array) && !empty($testimonial_array)):
 $testimonial_array_count = count($testimonial_array) ;
 for($i=0; $i< $testimonial_array_count; $i++) :    ?>
 <!-- Modal -->
@@ -66,13 +71,15 @@ for($i=0; $i< $testimonial_array_count; $i++) :    ?>
     <div class="modal-dialog modal-dialog-scrollable  modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalScrollableTitle<?php echo $i  ?>"><?php  echo $testimonial_array[$i]['title'];  ?></h5>
+                <h5 class="modal-title  text-center w-100" id="exampleModalScrollableTitle<?php echo $i  ?>"><?php  echo $testimonial_array[$i]['title'];  ?></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
+                <?php   if(isset($testimonial_array[$i]['thumbnail_url']) && !empty($testimonial_array[$i]['thumbnail_url']) ) : ?>
                 <img class="testimonial-thumbnail-modal" src="<?php echo $testimonial_array[$i]['thumbnail_url'] ; ?>" alt="img">
+               <?php  endif; ?>
                 <?php echo $testimonial_array[$i]['content'];  ?>
                 <footer class="blockquote-footer">
                 <?php echo $testimonial_array[$i]['author'];  ?>
@@ -84,5 +91,6 @@ for($i=0; $i< $testimonial_array_count; $i++) :    ?>
         </div>
     </div>
 </div>
-<?php  endfor; ?>
-
+<?php  endfor;
+endif;
+?>

@@ -8,10 +8,10 @@ function mind_menu_init(){
 	register_nav_menus( array(
 		'top_menu'      => esc_html__( 'Primary', 'mind' ),
 		"footer_menu"   => esc_html__("Footer Menu" , "mind"),
+		"front_page_menu"=> esc_html__('Front Page Menu' , 'mind'),
 	) );
 
 }
-
 
 add_action("after_setup_theme" , "mind_menu_init");
 
@@ -48,4 +48,31 @@ function mind_the_footer_menu(){
 		'echo'            => true,
 	] ;
 	wp_nav_menu($args );
+}
+
+// front page top menu
+function  mind_the_front_page_menu(){
+
+	$args =  [
+		'theme_location'  => 'front_page_menu',
+		'menu'            => '',
+		'container'       =>  false ,
+		'echo'            => true,
+		//	'items_wrap'      => '<ul id="%1$s" class="%2$s menu">%3$s</ul>',
+		'items_wrap'      => '<ul id="%1$s" class="%2$s  mr-auto">%3$s</ul>',
+		// 'menu_class'      => 'menu navbar-nav mr-auto',
+		'menu_class'      => 'menu nav nav-tabs mr-auto',
+		'depth'           => 0,
+		'walker'          => new WP_Bootstrap_Navwalker() ,
+		'fallback_cb'     => 'wp_page_menu',
+		// 'container_class' => '',
+		// 'container_id'    => '',
+		//  'menu_id'         => '',
+		//'before'          => '',
+		// 'after'           => '',
+		// 'link_before'     =>  "",
+		// 'link_after'      => '',
+	] ;
+	wp_nav_menu($args );
+
 }

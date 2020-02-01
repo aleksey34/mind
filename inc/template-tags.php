@@ -122,7 +122,8 @@ if ( ! function_exists( 'mind_post_thumbnail' ) ) :
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
 		}
-
+		$exist =get_the_post_thumbnail_url();
+        if(!isset($exist) && empty($exist)) {return false;}
 		if ( is_singular() ) :
 			?>
 

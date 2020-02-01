@@ -26,7 +26,7 @@ function register_post_types_teachers(){
 // 'show_in_nav_menus'   => null, // зависит от public
 		'show_in_menu'        => true, // показывать ли в меню адмнки
 // 'show_in_admin_bar'   => null, // зависит от show_in_menu
-		'show_in_rest'        => null, // добавить в REST API. C WP 4.7
+		'show_in_rest'        => true, // добавить в REST API. C WP 4.7
 		'rest_base'           => null, // $post_type. C WP 4.7
 		'menu_position'       => 4,
 		'menu_icon'           => "dashicons-businessman",
@@ -34,7 +34,7 @@ function register_post_types_teachers(){
 //'capabilities'      => 'post', // массив дополнительных прав для этого типа записи
 //'map_meta_cap'      => null, // Ставим true чтобы включить дефолтный обработчик специальных прав
 		'hierarchical'        => false,
-		'supports'            => [ 'title', 'editor', 'thumbnail','custom-fields'], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
+		'supports'            => [ 'title', 'editor', 'thumbnail','custom-fields' ], // 'title','editor','author','thumbnail','excerpt','trackbacks','custom-fields','comments','revisions','page-attributes','post-formats'
 		'taxonomies'          => [],
 		'has_archive'         => false,
 		'rewrite'             => true,
@@ -63,6 +63,14 @@ function  register_taxonomy_for_teachers(){
 		),
 		'show_ui'       => true,
 		'query_var'     => true,
+
+
+		// параметры связанные с REST  !important!!
+		'show_in_rest'          => true,
+		'rest_base'             => 'personal_role',
+		'rest_controller_class' => 'WP_REST_Terms_Controller',
+
+
 		//'rewrite'       => array( 'slug' => 'the_genre' ), // свой слаг в URL
 	));
 }

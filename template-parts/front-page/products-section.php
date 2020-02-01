@@ -1,4 +1,5 @@
-<section class="page-section section page-section__products">
+<?php  if(!defined("ABSPATH")) exit; ?>
+<section id="frontPageProducts" class="page-section section page-section__products">
 	<div class="page-container">
 
 		<?php if(function_exists('carbon_get_the_post_meta')):  ?>
@@ -54,3 +55,4 @@
 		</ul>
 	</div>
 </section>
+<div class="divider"></div>

@@ -1,4 +1,5 @@
 <?php  if(!defined("ABSPATH")) exit; ?>
-</header>
-</div>
-</div>
+            </header>
+        </div>
+    </div>
+</section>

@@ -1,9 +1,8 @@
-
 // pagination style bootstrap 4
 // -for html structure Wp default pagination
 // apply to -- wrapper of pagination
 %wp_pagination{
-  nav.pagination{
+  nav.pagination , .pagination{
     div.nav-links{
       margin-top: .5rem;
       margin-bottom: .5rem;
@@ -31,7 +30,9 @@
       a.page-numbers.prev,  a.page-numbers.next{
         width: auto;
       }
-      a:hover , span:hover , span.page-numbers.current{
+      a:hover , span:hover ,
+      span.page-numbers.current ,
+      span.post-page-numbers.current{
         transition: all 0.5s;
         z-index: 1;
         color: #fff;

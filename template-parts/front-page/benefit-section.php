@@ -1,6 +1,7 @@
+<?php  if(!defined("ABSPATH")) exit; ?>
 <?php if(function_exists('carbon_get_the_post_meta')) :  ?>
 
-	<section class="page-section page-section__benefits section ">
+	<section id="frontPageBenefit" class="page-section page-section__benefits section ">
 		<div class="page-container">
 
 			<div class="page-section-header">
@@ -20,13 +21,13 @@
 
 			<?php
 			$benefit_section_blocks =   carbon_get_the_post_meta('crb_front_page_benefit_section_benefit_block' );
-			if(isset($benefit_section_blocks) && !empty($benefit_section_blocks)) :
-				$benefit_count = 1;
-				foreach ($benefit_section_blocks as $benefit_section_block) :
+			if(isset($benefit_section_blocks) && !empty($benefit_section_blocks)) : ?>
+            <div class="services">
+			<?php 	foreach ($benefit_section_blocks as $benefit_section_block) :
 					?>
-					<?php if(1 === $benefit_count%2) : ?>
-					<div class="services">
-				<?php endif;  ?>
+
+
+
 					<div class="services__item">
 						<?php if(isset($benefit_section_block['icon']) && !empty($benefit_section_block['icon'])) :  ?>
 							<img class="services__icon" src="<?php  echo $benefit_section_block['icon'] ; ?>" alt="img">
@@ -39,14 +40,14 @@
 						<?php  endif;  ?>
 					</div>
 
-					<?php if(0 === $benefit_count%2) : ?>
-					</div>
-				<?php endif;  $benefit_count++;  ?>
+
 				<?php
-				endforeach;
+				endforeach;?>
+        </div>
+				<?php
 			endif;
 			?>
 		</div>
 	</section>
-
+    <div class="divider"></div>
 <?php  endif;  ?>

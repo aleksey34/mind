@@ -4,60 +4,57 @@ OLD___Template Name:Template Front Page
 */
 
 get_header();
+
+?>
+<?php
 //section for alert
 get_template_part('template-parts/front-page/alert-section');
 ?>
 
 <?php  // _________________ПЕРВАЯ СЕКЦИЯ____________________TOP  ?>
-<?php  get_template_part('template-parts/front-page/top-section'); ?>
+<?php
+
+//echo do_shortcode("[front_page_intro]");
+
+//get_template_part('template-parts/front-page/intro-section'); ?>
 
 
 <?php  // _________________ВТОРАЯ СЕКЦИЯ____________________BENEFIT ?>
-<?php  get_template_part('template-parts/front-page/benefit-section'); ?>
+<?php //  get_template_part('template-parts/front-page/benefit-section'); ?>
 
-
-<div class="divider"></div>
 
 <?php  // _________________ТРЕТИЯ СЕКЦИЯ____________________NEWS  ?>
-<?php  get_template_part('template-parts/front-page/news-section'); ?>
+<?php // get_template_part('template-parts/front-page/news-section'); ?>
 
-
-<div class="divider"></div>
 
 <?php  // _________________ЧЕТВЕРТАЯ СЕКЦИЯ____________________POSTS ?>
-<?php  get_template_part('template-parts/front-page/posts-section'); ?>
+<?php //  get_template_part('template-parts/front-page/posts-section'); ?>
 
-<div class="divider"></div>
+<?php  //n_______ 5 section______________testimonial ?>
+<?php // get_template_part('template-parts/front-page/testimonials-section'); ?>
 
-<?php  // _________________ПЯТАЯ СЕКЦИЯ____________________TEACHERS ?>
-<?php  get_template_part('template-parts/front-page/teachers-section'); ?>
+<?php  //_________________6 СЕКЦИЯ____________________PRODUCTS ?>
+<?php // get_template_part('template-parts/front-page/products-section'); ?>
 
-<div class="divider"></div>
 
-<?php  //additional section -- testimonial ?>
-<?php  get_template_part('template-parts/front-page/testimonials-section'); ?>
+<?php // _________________7 СЕКЦИЯ____________________section testimonial   QUOTES!! ?>
+<?php //  get_template_part('template-parts/front-page/quotes-section'); ?>
 
-<div class="divider"></div>
-<?php   // _________________6 СЕКЦИЯ____________________PARTNERS ?>
-<?php  get_template_part('template-parts/front-page/partners-section'); ?>
 
-<div class="divider"></div>
+<?php  // _________________8 СЕКЦИЯ____________________TEACHERS ?>
+<?php //  get_template_part('template-parts/front-page/teachers-section'); ?>
 
-<?php  //_________________7 СЕКЦИЯ____________________PRODUCTS ?>
-<?php  get_template_part('template-parts/front-page/products-section'); ?>
 
-<div class="divider"></div>
+<?php   // _________________9СЕКЦИЯ____________________PARTNERS ?>
+<?php // get_template_part('template-parts/front-page/partners-section'); ?>
 
-<?php // _________________8 СЕКЦИЯ____________________section testimonial   QUOTES!! ?>
-<?php  get_template_part('template-parts/front-page/quotes-section'); ?>
 
-<div class="divider"></div>
-<?php // _________________9 СЕКЦИЯ____________________BOOKS ?>
-<?php  get_template_part('template-parts/front-page/books-section'); ?>
+<?php // _________________10СЕКЦИЯ____________________BOOKS ?>
+<?php // get_template_part('template-parts/front-page/books-section'); ?>
 
-<div class="divider"></div>
-<?php // _________________10 СЕКЦИЯ____________________ MAP ?>
-<?php  get_template_part('template-parts/front-page/map-section'); ?>
+<?php // _________________11СЕКЦИЯ____________________ MAP ?>
+<?php //  get_template_part('template-parts/front-page/map-section'); ?>
+
 
 <?php
 get_footer() ;

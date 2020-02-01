@@ -1,4 +1,5 @@
 <?php
+ if(!defined("ABSPATH")) exit;
 //get_wd(is_product());
 //if(is_product()){
 //	remove_action("woocommerce_sidebar", "woocommerce_get_sidebar", 10);

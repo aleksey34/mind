@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area container">
+	<div id="primary" class="content-area container woocommerce-product-details__short-description">
         <div class="row">
             <main id="main" class="site-main col-12 col-md-7 col-lg-8">
 

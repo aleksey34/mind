@@ -10,11 +10,12 @@
 <?php  $footer_background_url = get_theme_mod("footer_background");
 if(isset($footer_background_url) && !empty($footer_background_url)){
 	$footer_background_img  =  'background-image: url("'.$footer_background_url.'")';
+	$footer_background_img = "$footer_background_img".';background-size: cover; background-position: center;';
 }
 ;
 ?>
 <footer class="footer" style=' <?php echo $footer_background_img ;  ?> ;
-background-size: cover; background-position: center;'>
+'>
     <div class="container">
         <div class="footer__inner">
             <div class="footer__col footer__col--first">
@@ -75,10 +76,10 @@ background-size: cover; background-position: center;'>
 		    <?php
 		    echo get_theme_mod("footer_copyright");
 		    ?>
-<!--        © 2016 MoGo free PSD template by  <span>Laaqiq</span>-->
-    </div>
     </div>
 </footer>
+<?php // icon for top scroll ?>
+<a class="top_scroll_btn" href="#topHeaderAnchorForScroll"></a>
 <?php
 /**
  *

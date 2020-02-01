@@ -7,6 +7,10 @@ get_header();
 
 ?>
 
+list of info about this page
+
+
+
 
 
 <!--about us -->

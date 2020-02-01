@@ -36,6 +36,10 @@
 				<?php
 				mind_posted_on();
 				mind_posted_by();
+				echo "</br>";
+				//esc_html_e("Categories: ");
+                echo "Категории: ";
+				echo  get_the_category_list(' ');
 				?>
             </div><!-- .entry-meta -->
 		<?php endif; ?>
@@ -57,11 +61,33 @@
 			get_the_title()
 		) );
 
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mind' ),
-			'after'  => '</div>',
-		) );
+//		wp_link_pages( array(
+//			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mind' ),
+//			'after'  => '</div>',
+//		) );
 		?>
+        <?php  if ( is_singular() ) :
+	        $singular_pagepart_pagination= "";
+            $singular_pagepart_pagination = wp_link_pages( array(
+		            'before' => '<div class="page-links nav-links">'  ,
+		            'after'  => '</div>',
+		            'nextpagelink'     => '',
+		            'previouspagelink' => '',
+		            'echo'   => 0,
+	            ) );
+            if( null !== $singular_pagepart_pagination  &&  isset($singular_pagepart_pagination) && !empty($singular_pagepart_pagination)) :
+            ?>
+        <div class="pagination-wrapper">
+            <h5 class="pagination-page_title"><?php  esc_html_e( 'Pages:', 'mind' ) ?></h5>
+            <div class="pagination navigation">
+			    <?php
+			   echo $singular_pagepart_pagination;
+			    ?>
+            </div>
+        </div>
+        <?php
+            endif;
+             endif; ?>
     </div><!-- .entry-content -->
 
     <footer class="entry-footer">

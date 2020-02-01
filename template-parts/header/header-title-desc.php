@@ -1,3 +1,4 @@
+<?php  if(!defined("ABSPATH")) exit; ?>
 <?php if(is_front_page()) : // is_home() ??   ?>
     <h1 class="site-title header-site-title-text">
             <?php

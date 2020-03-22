@@ -22,10 +22,11 @@
 @import "common-blocks/pagination/style";
 
 // product sale upsale crossale and etc
-@import "common-blocks/product-sale/style";
+@import "product/product-sale/style";
 
 // litle block common
 @import "common-blocks/style";
+
 
 
 //cart
@@ -41,11 +42,14 @@
 
 
 // single product
-@import "single-product/single-product";
+@import "product/single-product/single-product";
 // tabs for pruduct single page
-@import "single-product/tabs/comments";
-@import "single-product/tabs/description";
-@import "single-product/tabs/details";
+@import "product/single-product/tabs/comments";
+@import "product/single-product/tabs/description";
+@import "product/single-product/tabs/details";
+@import "product/product_swatches_attr";
+// product shop and archive and singe -- add sticker - product is finished
+@import "product/product_sticker_product_is_finished";
 
 
 // archive

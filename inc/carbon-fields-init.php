@@ -1,6 +1,17 @@
 <?php
+//namespace Carbon_Fields;
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
+
+// переодически падает
+// что делал - обновил компосер - сам карбон филлд
+// добавил нэймспэйс на этой странице -- заработало
+// закоментировал - все равно работает
+//  проблема неясна!
+// нэймсэйс оставил - посмотрим -будет падать или нет!!
+//
+
+
 //
 //add_action( 'carbon_fields_register_fields', 'crb_attach_theme_options' );
 //function crb_attach_theme_options() {

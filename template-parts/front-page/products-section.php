@@ -1,19 +1,16 @@
-<?php  if(!defined("ABSPATH")) exit; ?>
+<?php  if(!defined("ABSPATH")) exit;
+global  $front_page_products_title;
+global  $front_page_products_subtitle;
+?>
 <section id="frontPageProducts" class="page-section section page-section__products">
 	<div class="page-container">
-
-		<?php if(function_exists('carbon_get_the_post_meta')):  ?>
-			<div class="page-section-header">
-				<?php $products_section_title = carbon_get_the_post_meta('crb_front_page_products_section_title');
-				if(isset($products_section_title) && !empty($products_section_title)) :?>
-					<h2 class="page-section-title"><?php echo  $products_section_title;   ?></h2>
-				<?php endif; ?>
-				<?php $products_section_subtitle = carbon_get_the_post_meta('crb_front_page_products_section_subtitle'); ?>
-				<?php if(isset($products_section_subtitle) && !empty($products_section_subtitle)) :?>
-					<h3 class="page-section-subtitle"><?php  echo $products_section_subtitle;  ?></h3>
-				<?php endif;  ?>
-			</div>
-		<?php  endif; ?>
+		<?php
+		mind_front_page_get_section_title_subtitle_part(
+			$front_page_products_title,
+			$front_page_products_subtitle,
+			'crb_front_page_products_section_title',
+			'crb_front_page_products_section_subtitle')
+		?>
 		<ul class="products front-page-products-list">
 			<?php
 			/**
@@ -55,4 +52,3 @@
 		</ul>
 	</div>
 </section>
-<div class="divider"></div>

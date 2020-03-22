@@ -36,6 +36,8 @@ function translate_text($translated) {
 
 	// for rating text
 	$translated = str_ireplace('отзыва клиентов', 'отзыва', $translated);
+
+	$translated = str_ireplace('Похожие товары', 'Похожие', $translated);
 	return $translated;
 }
 

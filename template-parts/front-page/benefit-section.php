@@ -49,5 +49,4 @@
 			?>
 		</div>
 	</section>
-    <div class="divider"></div>
 <?php  endif;  ?>

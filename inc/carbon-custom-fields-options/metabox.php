@@ -1,9 +1,20 @@
 <?php
+namespace  Carbon_Fields;
 
 if(!defined("ABSPATH")) exit;
 
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
+
+
+// переодически падает
+// что делал - обновил компосер - сам карбон филлд
+// добавил нэймспэйс на этой странице -- заработало
+// закоментировал - все равно работает
+//  проблема неясна!
+// нэймсэйс оставил - посмотрим -будет падать или нет!!
+//
+
 
 
 //Container::make( 'post_meta', 'Custom Data' )

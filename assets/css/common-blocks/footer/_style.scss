@@ -41,14 +41,14 @@
 
 .footer__text ,
 p.footer__text,
-span.footer-contact-address ,
-span.footer-contact-phone,
-span.footer-contact-skype{
+.footer-contact-address ,
+.footer-contact-phone12.footer-contact-phone__white,
+.footer-contact-skype{
   display: flex;
   max-width: 100%;
 //  margin-bottom: 30px;
   align-items: baseline;
-  color: #fff;
+  color: #fff !important;
   font-size: 15px;
   line-height: 1.4;
   margin-bottom: 5px;
@@ -117,7 +117,7 @@ span.footer-contact-skype{
 }
 
 
-.footer__text__mail  , span.footer-contact-email {
+.footer__text__mail  , span.footer-contact-email , .footer-contact-skype {
   display: flex;
   align-items: baseline;
   color: #fff;
@@ -128,8 +128,8 @@ span.footer-contact-skype{
  // text-decoration: none;
   transition: all 0.5s;
 }
-.footer__text__mail:hover , span.footer-contact-email:hover{
-  color: #95e1d3;
+.footer__text__mail:hover , .footer-contact-email:hover , .footer__text .footer-contact-skype:hover{
+  color: #95e1d3 !important;
 }
 
 
@@ -172,6 +172,11 @@ width: 39%;
   .footer__col--third {
     width: 50%;
    // margin-bottom: 40px;
+
+
+    .footer-contact-phone12.footer-contact-phone__white{
+      color: #fff !important;
+    }
   }
 
 }
@@ -188,6 +193,10 @@ width: 39%;
   .footer__col--second {
 
     width: 100%;
+    .footer-contact-phone12.footer-contact-phone__white{
+      color: #fff !important;
+    }
+
   }
 
   .footer__suptitle__mail {

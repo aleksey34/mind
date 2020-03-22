@@ -25,7 +25,7 @@
 
 form.search-form > input[type=submit], .header-icon-cart-widget p.woocommerce-mini-cart__buttons a:nth-child(1), .header-icon-cart-widget p.woocommerce-mini-cart__buttons a:nth-child(2), section.widget.woocommerce.widget_shopping_cart p.woocommerce-mini-cart__buttons > a, body section.upsells ul.products a.ajax_add_to_cart,
 body section.related ul.products a.ajax_add_to_cart,
-body div.cross-sells ul.products a.ajax_add_to_cart, .actions button, .cart_totals .checkout-button, .single_add_to_cart_button, #commentform p.form-submit input.submit, #comment .form-submit input[name=submit], body ul.products a.ajax_add_to_cart {
+body div.cross-sells ul.products a.ajax_add_to_cart, .actions button, .cart_totals .checkout-button, .single_add_to_cart_button, #commentform p.form-submit input.submit, #comment .form-submit input[name=submit], .button-variable-wrapper .button-variable-item, body ul.products a.ajax_add_to_cart {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -48,19 +48,19 @@ body div.cross-sells ul.products a.ajax_add_to_cart, .actions button, .cart_tota
 
 form.search-form > input[type=submit], .header-icon-cart-widget p.woocommerce-mini-cart__buttons a:nth-child(1), .header-icon-cart-widget p.woocommerce-mini-cart__buttons a:nth-child(2), .header-search-form button, section.widget > form #subscribe-submit button, section.widget.woocommerce.widget_shopping_cart p.woocommerce-mini-cart__buttons > a.wc-forward, body section.upsells ul.products a.ajax_add_to_cart,
 body section.related ul.products a.ajax_add_to_cart,
-body div.cross-sells ul.products a.ajax_add_to_cart, .actions button, .single_add_to_cart_button, #commentform p.form-submit input.submit, #comment .form-submit input[name=submit], body ul.products a.ajax_add_to_cart, .about-contact-form-wrap input[type=submit] {
+body div.cross-sells ul.products a.ajax_add_to_cart, .actions button, .single_add_to_cart_button, #commentform p.form-submit input.submit, #comment .form-submit input[name=submit], .button-variable-wrapper .button-variable-item, body ul.products a.ajax_add_to_cart, .about-contact-form-wrap input[type=submit] {
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
   transition: all 0.5s; }
   form.search-form > input[type=submit]:hover, .header-icon-cart-widget p.woocommerce-mini-cart__buttons a:hover:nth-child(1), .header-icon-cart-widget p.woocommerce-mini-cart__buttons a:hover:nth-child(2), .header-search-form button:hover, section.widget > form #subscribe-submit button:hover, section.widget.woocommerce.widget_shopping_cart p.woocommerce-mini-cart__buttons > a.wc-forward:hover, body section.upsells ul.products a.ajax_add_to_cart:hover,
   body section.related ul.products a.ajax_add_to_cart:hover,
-  body div.cross-sells ul.products a.ajax_add_to_cart:hover, .actions button:hover, .single_add_to_cart_button:hover, #commentform p.form-submit input.submit:hover, #comment .form-submit input[name=submit]:hover, body ul.products a.ajax_add_to_cart:hover, .about-contact-form-wrap input[type=submit]:hover {
+  body div.cross-sells ul.products a.ajax_add_to_cart:hover, .actions button:hover, .single_add_to_cart_button:hover, #commentform p.form-submit input.submit:hover, #comment .form-submit input[name=submit]:hover, .button-variable-wrapper .button-variable-item:hover, body ul.products a.ajax_add_to_cart:hover, .about-contact-form-wrap input[type=submit]:hover {
     transition: all 0.5s;
     background-color: #222629; }
   form.search-form > input[type=submit]:disabled, .header-icon-cart-widget p.woocommerce-mini-cart__buttons a:disabled:nth-child(1), .header-icon-cart-widget p.woocommerce-mini-cart__buttons a:disabled:nth-child(2), .header-search-form button:disabled, section.widget > form #subscribe-submit button:disabled, section.widget.woocommerce.widget_shopping_cart p.woocommerce-mini-cart__buttons > a.wc-forward:disabled, body section.upsells ul.products a.ajax_add_to_cart:disabled,
   body section.related ul.products a.ajax_add_to_cart:disabled,
-  body div.cross-sells ul.products a.ajax_add_to_cart:disabled, .actions button:disabled, .single_add_to_cart_button:disabled, #commentform p.form-submit input.submit:disabled, #comment .form-submit input[name=submit]:disabled, body ul.products a.ajax_add_to_cart:disabled, .about-contact-form-wrap input[type=submit]:disabled {
+  body div.cross-sells ul.products a.ajax_add_to_cart:disabled, .actions button:disabled, .single_add_to_cart_button:disabled, #commentform p.form-submit input.submit:disabled, #comment .form-submit input[name=submit]:disabled, .button-variable-wrapper .button-variable-item:disabled, body ul.products a.ajax_add_to_cart:disabled, .about-contact-form-wrap input[type=submit]:disabled {
     transition: all 0.5s;
     background-color: #56606a; }
 
@@ -305,7 +305,7 @@ section.widget,
   .widget > h2 + p,
   .widget > h2 + p ~ *:not(script) {
     display: block;
-    background-color: lightyellow;
+    background-color: white;
     transition: all 0.5s;
     margin-bottom: 0;
     width: 100%;
@@ -316,16 +316,16 @@ section.widget,
   .widget > h2 + p:hover ~ *:not(script),
   .widget > h2 + p + label:hover,
   .widget > h2 + p + label + select:hover {
-    background-color: #ffffad; }
+    background-color: #ffffe5; }
   .widget > ul > li.cat-item {
     display: flex; }
   .widget > ul > li {
     display: block;
     padding: 15px auto 20px auto;
-    background-color: lightyellow;
+    background-color: white;
     transition: all 0.5s; }
     .widget > ul > li:hover {
-      background-color: #ffffad; }
+      background-color: #ffffe5; }
     .widget > ul > li > a {
       display: flex;
       width: 100%;
@@ -405,7 +405,6 @@ section.widget.woocommerce .woocommerce-mini-cart .woocommerce-mini-cart-item.mi
   padding-left: 15px; }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
   font-family: 'Roboto Slab', serif;
   font-size: 16px; }
 
@@ -589,7 +588,7 @@ a {
   -moz-outline: none;
   -webkit-outline: none;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 400;
   color: #ccc;
   padding-bottom: 22px;
@@ -717,6 +716,18 @@ a {
 .reg-login-form-wrap .form-detail .form-row-last input {
   padding: 11px; }
 
+@media (max-width: 1199.98px) {
+  .block-login-register .tab .tablinks {
+    font-size: 24px; } }
+@media (max-width: 991.98px) {
+  .block-login-register .tab .tablinks {
+    font-size: 22px; } }
+@media (max-width: 767.98px) {
+  .block-login-register .tab .tablinks {
+    font-size: 20px; } }
+@media (max-width: 575.98px) {
+  .block-login-register .tab .tablinks {
+    font-size: 18px; } }
 .main-header-img-custom-background {
   position: absolute;
   z-index: -1;
@@ -932,9 +943,9 @@ a.basket-btn.basket-btn_fixed-xs {
   width: 100%; }
   .header-nav > nav.navbar.top-navbar {
     transition: all 0.5s;
-    background-color: rgba(230, 230, 230, 0.6) !important; }
+    background-color: rgba(230, 230, 230, 0.9) !important; }
     .header-nav > nav.navbar.top-navbar:hover {
-      background-color: rgba(230, 230, 230, 0.8) !important; }
+      background-color: rgba(230, 230, 230, 0.95) !important; }
     .header-nav > nav.navbar.top-navbar .menu {
       border-bottom: none; }
 
@@ -1049,19 +1060,23 @@ aside.widget-area {
 
 section.widget > form {
   padding: 10px 5px;
-  background-color: lightyellow;
+  background-color: white;
   transition: all 0.5s; }
   section.widget > form:hover {
-    background-color: #ffffad; }
+    background-color: #ffffe5; }
+
+p#subscribe-submit button[name=jetpack_subscriptions_widget] {
+  border-radius: 3px;
+  padding: 3px 9px; }
 
 section.widget.woocommerce.widget_shopping_cart ul.woocommerce-mini-cart li.mini_cart_item {
   position: relative;
   display: block;
   padding: 15px auto 20px auto;
-  background-color: lightyellow;
+  background-color: white;
   transition: all 0.5s; }
   section.widget.woocommerce.widget_shopping_cart ul.woocommerce-mini-cart li.mini_cart_item:hover {
-    background-color: #ffffad; }
+    background-color: #ffffe5; }
   section.widget.woocommerce.widget_shopping_cart ul.woocommerce-mini-cart li.mini_cart_item a.remove_from_cart_button {
     position: absolute;
     z-index: 10;
@@ -1079,7 +1094,7 @@ section.widget.woocommerce.widget_shopping_cart ul.woocommerce-mini-cart li.mini
       height: 50px;
       margin-right: 12px; }
 section.widget.woocommerce.widget_shopping_cart p {
-  background-color: #ffffad;
+  background-color: white;
   margin-bottom: 0; }
 section.widget.woocommerce.widget_shopping_cart p.woocommerce-mini-cart__total {
   padding: 10px  5px 0 5px; }
@@ -1093,7 +1108,7 @@ section.widget.woocommerce.widget_shopping_cart p.woocommerce-mini-cart__buttons
 
 section.widget.widget_recently_viewed_products ul.product_list_widget span.woocommerce-Price-amount {
   margin-top: 15px;
-  display: block; }
+  display: inline-block; }
 
 .pagination-wrapper {
   display: flex;
@@ -1423,6 +1438,56 @@ div > span.onsale {
   .woocommerce-Tabs-panel > *:first-child {
     padding-top: 10px; }
 
+.button-variable-wrapper {
+  margin-left: 0;
+  padding: 0 0 0 9px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  .button-variable-wrapper .button-variable-item {
+    margin-top: 25px;
+    transition: all 0.5s;
+    margin-right: 7px; }
+    .button-variable-wrapper .button-variable-item .variable-item-span-button {
+      color: #e6e6e6;
+      transition: all 0.5s; }
+      .button-variable-wrapper .button-variable-item .variable-item-span-button:hover {
+        color: #fff; }
+  .button-variable-wrapper .button-variable-item.selected {
+    border: 1px solid #00b300;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4); }
+
+.variable-items-wrapper + .reset_variations {
+  display: inline-block;
+  margin-left: 15px; }
+
+.product_sticker_product_is_finished {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.wrap {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: minmax(250px, 300px)/1fr;
+  grid-gap: 15px; }
+
+.menu_item {
+  grid-column: 1 / 2;
+  height: 30px; }
+
+.content_item {
+  display: none;
+  position: absolute; }
+
+.content_item.content_active {
+  display: block;
+  position: relative;
+  grid-column: 2/3;
+  grid-row-start: 1;
+  grid-row-end: 5; }
+
 .post-thumbnail img {
   max-width: 100%; }
 
@@ -1568,7 +1633,6 @@ body.error404.custom-background .background404 {
   justify-content: center;
   width: 100%;
   background: url("../img/intro.jpg") center no-repeat;
-  -webkid-background-size: cover;
   background-size: cover;
   flex-wrap: wrap; }
 
@@ -1585,7 +1649,7 @@ body.error404.custom-background .background404 {
   color: #979da8;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0px; }
+  letter-spacing: 0; }
 
 .intro-subtitle:after {
   content: "";
@@ -1602,14 +1666,13 @@ body.error404.custom-background .background404 {
   color: #ffffff;
   font-size: 40px;
   line-height: 2;
-  letter-spacing: 0px; }
+  letter-spacing: 0; }
 
 /* Header */
 .header {
   width: 100%;
-  padding-intro: 30px;
+  padding-top: 30px;
   position: absolute;
-  intro: 0;
   left: 0;
   right: 0;
   z-index: 1000; }
@@ -1632,7 +1695,7 @@ body.error404.custom-background .background404 {
 
 .page-menu-item {
   display: inline-block;
-  vertical-align: intro;
+  vertical-align: top;
   margin: 0 30px;
   position: relative;
   color: #fff;
@@ -1647,7 +1710,7 @@ body.error404.custom-background .background404 {
   background-color: #36add4;
   opacity: 0;
   position: absolute;
-  intro: 100%;
+  top: 100%;
   left: 0;
   z-index: 1;
   transition: width .5s linear; }
@@ -1661,7 +1724,7 @@ body.error404.custom-background .background404 {
 
 .page-sub-menu > li {
   display: inline-block;
-  vertical-align: intro;
+  vertical-align: center;
   margin: 0 30px;
   position: relative;
   color: #fff;
@@ -1670,7 +1733,7 @@ body.error404.custom-background .background404 {
 /* Button */
 .btn__news .btn {
   display: inline-block;
-  vertical-align: intro;
+  vertical-align: center;
   padding: 10px 15px;
   background-color: rgba(65, 149, 133, 0.5);
   border-radius: 3px;
@@ -1716,9 +1779,8 @@ body.error404.custom-background .background404 {
 /* Services */
 .services {
   display: flex;
-  margin-intro: 50px;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
 
 .services__item {
   flex: 0 0 300px;
@@ -1731,13 +1793,13 @@ body.error404.custom-background .background404 {
 
 .services__icon {
   position: absolute;
-  intro: 0;
+  top: 0;
   left: 10px;
   z-index: 1;
-  transition: intro .2s linear; }
+  transition: all .2s linear; }
 
 .services__icon:hover {
-  intro: -5px; }
+  top: -5px; }
 
 .services__title {
   margin-bottom: 10px;
@@ -1789,7 +1851,7 @@ body.error404.custom-background .background404 {
 .about-post-items {
   max-width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 30px 0;
   flex-wrap: wrap;
   margin: 0 20px; }
@@ -1817,7 +1879,7 @@ body.error404.custom-background .background404 {
 
 /*---------------------- Об учителя -------------------------------*/
 .teachers {
-  margin-intro: 80px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
@@ -1866,7 +1928,7 @@ body.error404.custom-background .background404 {
   transition: opacity .2s; }
 
 .teachers__info {
-  margin-intro: 20px;
+  margin-top: 20px;
   cursor: pointer;
   text-align: center; }
 
@@ -1917,7 +1979,7 @@ body.error404.custom-background .background404 {
 
 .logos {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap; }
 
 .logos {
@@ -1932,7 +1994,7 @@ body.error404.custom-background .background404 {
 /*  rates */
 .page-section__products ul.front-page-products-list {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
   .page-section__products ul.front-page-products-list li.product.type-product {
     flex: 0 1 330px;
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.07);
@@ -1977,7 +2039,7 @@ li.product.type-product {
   border: 2px solid #95e1d3;
   border-radius: 50%;
   position: absolute;
-  intro: 0;
+  top: 0;
   left: 0;
   z-index: 1;
   max-width: 20%; }
@@ -2007,7 +2069,7 @@ li.product.type-product {
 
 /*  Statistics */
 .page-section.page-section__books {
-  margin-intro: 0;
+  margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   padding: 0; }
@@ -2017,7 +2079,8 @@ li.product.type-product {
 
 .stat {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .stat__item {
   flex: 1 1 0;
@@ -2047,7 +2110,7 @@ li.product.type-product {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  border-intro: 2px solid rgba(111, 111, 111, 0.5);
+  border-top: 2px solid rgba(111, 111, 111, 0.5);
   border-bottom: 2px solid rgba(111, 111, 111, 0.5); }
 
 .map__item__dot {
@@ -2079,7 +2142,7 @@ li.product.type-product {
 .testimonial-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly; }
+  justify-content: space-around; }
   .testimonial-wrapper .testimonial-item {
     flex: 0 1 350px;
     cursor: pointer; }
@@ -2141,7 +2204,7 @@ li.product.type-product {
 
   /* 5 */
   .teachers {
-    margin-intro: 30px; }
+    margin-top: 30px; }
 
   .teachers__item {
     width: 310px; }
@@ -2169,7 +2232,7 @@ li.product.type-product {
 
   .reviews__photo {
     max-width: 15%;
-    intro: 5px;
+    top: 5px;
     left: 10px; }
 
   .reviews__text {
@@ -2231,7 +2294,7 @@ li.product.type-product {
 
   /*4*/
   .about-post-items {
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0; }
 
   .about__img {
@@ -2394,13 +2457,13 @@ li.product.type-product {
 
 .footer__text,
 p.footer__text,
-span.footer-contact-address,
-span.footer-contact-phone,
-span.footer-contact-skype {
+.footer-contact-address,
+.footer-contact-phone12.footer-contact-phone__white,
+.footer-contact-skype {
   display: flex;
   max-width: 100%;
   align-items: baseline;
-  color: #fff;
+  color: #fff !important;
   font-size: 15px;
   line-height: 1.4;
   margin-bottom: 5px;
@@ -2453,7 +2516,7 @@ span.footer-contact-skype {
 .address__item, .footer-menu-block {
   max-width: 100%; }
 
-.footer__text__mail, span.footer-contact-email {
+.footer__text__mail, span.footer-contact-email, .footer-contact-skype {
   display: flex;
   align-items: baseline;
   color: #fff;
@@ -2463,8 +2526,8 @@ span.footer-contact-skype {
   font-family: 'Exo 2', sans-serif;
   transition: all 0.5s; }
 
-.footer__text__mail:hover, span.footer-contact-email:hover {
-  color: #95e1d3; }
+.footer__text__mail:hover, .footer-contact-email:hover, .footer__text .footer-contact-skype:hover {
+  color: #95e1d3 !important; }
 
 .divider {
   height: "3px";
@@ -2495,7 +2558,9 @@ span.footer-contact-skype {
     width: 39%; }
 
   .footer__col--third {
-    width: 50%; } }
+    width: 50%; }
+    .footer__col--third .footer-contact-phone12.footer-contact-phone__white {
+      color: #fff !important; } }
 @media screen and (max-width: 770px) {
   .footer__inner {
     flex-direction: column; }
@@ -2504,6 +2569,10 @@ span.footer-contact-skype {
   .footer__col--third,
   .footer__col--second {
     width: 100%; }
+    .footer__col--first .footer-contact-phone12.footer-contact-phone__white,
+    .footer__col--third .footer-contact-phone12.footer-contact-phone__white,
+    .footer__col--second .footer-contact-phone12.footer-contact-phone__white {
+      color: #fff !important; }
 
   .footer__suptitle__mail {
     margin-bottom: 0;

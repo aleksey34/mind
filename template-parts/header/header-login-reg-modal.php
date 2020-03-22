@@ -9,10 +9,10 @@
 			<div class="reg-login-form-wrap">
 				<div class="tab">
 					<div class="tab-inner" >
-						<button class="tablinks" onclick="openCity(event, 'sign-up')" >Sign Up</button>
+						<button class="tablinks" onclick="openCity(event, 'sign-up')" ><?php esc_html_e('Sign Up' , 'mind') ;  ?></button>
 					</div>
 					<div class="tab-inner">
-						<button class="tablinks active" onclick="openCity(event, 'sign-in')"  id="defaultOpen" >Sign In</button>
+						<button class="tablinks active" onclick="openCity(event, 'sign-in')"  id="defaultOpen" ><?php esc_html_e('Sign In' , 'mind') ;  ?></button>
 					</div>
 				</div>
 			</div>

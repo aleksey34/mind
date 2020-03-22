@@ -1,0 +1,1939 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mind\n"
+"POT-Creation-Date: 2020-02-09 18:28+0300\n"
+"PO-Revision-Date: 2020-02-09 20:19+0300\n"
+"Last-Translator: loft-blog\n"
+"Language-Team: loft-blog\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Страница не найдена, воспользуйтесь поиском."
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Похоже, что ничего не было найдено. Может быть, попробуйте одну из ссылок "
+"ниже или поиск?"
+
+#: 404.php:36
+msgid "Most Used Categories"
+msgstr "Часто используемые категории"
+
+#. translators: %1$s: smiley
+#: 404.php:52
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Попробуйте поискать в ежемесячных архивах.%1$s"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr "Установите необходимые плагины"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "Установить плагины"
+
+#. translators: %s: plugin name.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Установка Плагина: %s"
+
+#. translators: %s: plugin name.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "Обновление Плагина: %s"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ".Что-то пошло не так с API плагина."
+
+#. translators: 1: plugin name(s).
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "Эта тема требует плагин  %1$s."
+msgstr[1] "Эта тема требует плагины  %1$s."
+msgstr[2] "Эта тема требует плагины  %1$s."
+
+#. translators: 1: plugin name(s).
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "Эта тема рекомендует следующий плагин : %1$s."
+msgstr[1] "Эта тема рекомендует следующий плагины : %1$s."
+msgstr[2] "Эта тема рекомендует следующий плагины : %1$s."
+
+#. translators: 1: plugin name(s).
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+"Следующий плагин необходимо обновить до последней версии, чтобы обеспечить "
+"максимальную совместимость с этой темой:: %1$s."
+msgstr[1] ""
+"Следующий плагины необходимо обновить до последней версии, чтобы обеспечить "
+"максимальную совместимость с этой темой:: %1$s."
+msgstr[2] ""
+"Следующий плагины необходимо обновить до последней версии, чтобы обеспечить "
+"максимальную совместимость с этой темой:: %1$s."
+
+#. translators: 1: plugin name(s).
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] "Доступно обновление для:%1$s."
+msgstr[1] "Доступны обновления для следующих плагинов: %1$s."
+msgstr[2] "Доступны обновления для следующих плагинов: %1$s."
+
+#. translators: 1: plugin name(s).
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "Следующий обязательный плагин в настоящее время неактивен: %1$s."
+msgstr[1] "Следующие необходимые плагины в настоящее время неактивны: %1$s."
+msgstr[2] "Следующие необходимые плагины в настоящее время неактивны: %1$s."
+
+#. translators: 1: plugin name(s).
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "Следующий рекомендуемый плагин в настоящее время неактивен: %1$s."
+msgstr[1] "Следующие рекомендуемые плагины в настоящее время неактивены: %1$s."
+msgstr[2] "Следующие рекомендуемые плагины в настоящее время неактивены: %1$s."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "Начать установку плагина"
+msgstr[1] "Начать установку плагинов"
+msgstr[2] "Начать установку плагинов"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] "Начать обновление плагина"
+msgstr[1] "Начать обновление плагинов"
+msgstr[2] "Начать обновление плагинов"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "Начните активировать плагин"
+msgstr[1] "Начните активировать плагины"
+msgstr[2] "Начните активировать плагины"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr "Вернуться к программе установки необходимых плагинов"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:393
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:912
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2618
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr "Вернуться на панель инструментов"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:394
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr "Плагин активирован успешно."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:395
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] "Следующий плагин был успешно активирован:"
+msgstr[1] "Следующие плагины были активированы успешно:"
+msgstr[2] "Следующие плагины были активированы успешно:"
+
+#. translators: 1: plugin name.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Никаких действий не принимается. Плагин %1$s  уже был активен."
+
+#. translators: 1: plugin name.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Плагин не активирован. Для этой темы требуется более высокая версия %s   "
+"Пожалуйста, обновите плагин."
+
+#. translators: 1: dashboard link.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Все плагины установлены и успешно активированы  %1$s"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr "Убрать объявление"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Существует один или несколько необходимых или рекомендуемых плагинов для "
+"установки, обновления или активации."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr "Пожалуйста, обратитесь к администратору этого сайта за помощью."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+"Этот плагин должен быть обновлен, чтобы быть совместимым с вашей темой."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr "Требуется  обновление"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"Пакет удаленного плагина не содержит папку с нужным слагом и переименование "
+"не работает."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:1019
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Пожалуйста, свяжитесь с поставщиком плагинов и попросите их упаковать плагин "
+"в соответствии с рекомендациями WordPress."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"Пакет удаленного плагина состоит из более чем одного файла, но файлы не "
+"упакованы в папку."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:1206
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "и"
+
+#. translators: %s: version number
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr "Требуется"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr "Рекомендованно"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr "WordPress Репозиторий"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr "Внешний истчник"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr "Распокованно"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr "Не уснановленно"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr "Установленные но не активированы"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr "Aктивный"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr "Не доступно, требуется обновление"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr "Требуется обновление"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr "Рекомендуем обновить"
+
+#. translators: 1: install status, 2: update status
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "Установка/обновление  %1$s   %2$s"
+
+#. translators: 1: number of plugins.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] "<span class=\"screen-reader-text\"> \" %s\"</span>"
+msgstr[1] "<span class=\"screen-reader-text\"> \" %s\"</span>"
+msgstr[2] "<span class=\"screen-reader-text\"> \" %s\"</span>"
+
+#. translators: 1: number of plugins.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] "Установить <span class=\"screen-reader-text\"> \" %s\"</span>"
+msgstr[1] "Установить <span class=\"screen-reader-text\"> \" %s\"</span>"
+msgstr[2] "Установить <span class=\"screen-reader-text\"> \" %s\"</span>"
+
+#. translators: 1: number of plugins.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+"Обновление доступно <span class=\"screen-reader-text\"> \" %s\"</span>"
+msgstr[1] ""
+"Обновления доступны <span class=\"screen-reader-text\"> \" %s\"</span>"
+msgstr[2] ""
+"Обновления доступны <span class=\"screen-reader-text\"> \" %s\"</span>"
+
+#. translators: 1: number of plugins.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] "Активировать <span class=\"screen-reader-text\"> \" %s\"</span>"
+msgstr[1] "Активировать <span class=\"screen-reader-text\"> \" %s\"</span>"
+msgstr[2] "Редактировать <span class=\"screen-reader-text\"> \" %s\"</span>"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "неивестный"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr "Установленная версия:"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr "Минимально требуемая версия:"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr "Доступная версия:"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr "Нет плагинов для установки, обновления или активации."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr "Плагин"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr "Источики"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr "Тип"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr "Версия"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr "Статус"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr "Установить %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr "Обновить %2$s"
+
+#. translators: %2$s: plugin name in screen reader markup
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr "Активировать %2$s"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr "Обновление сообщения от автора плагина:"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr "Установить"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr "Обновить"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr "Активировать"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+"Не было выбрано никаких плагинов для установки. Никаких действий не "
+"принимается."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+"Не было выбрано плагинов для обновления. Никаких действий не принимается."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr "На данный момент нет доступных плагинов для установки."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr "В настоящее время нет доступных плагинов для обновления."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+"Не было выбрано ни одного плагина для активации. Никаких действий не "
+"принимается."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr "На данный момент нет доступных плагинов для активации."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr "Активация плагина не удалась."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Обновление плагина  %1$s (%2$d/%3$d)"
+
+#. translators: 1: plugin name, 2: error message.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr "Произошла ошибка при установке %1$s: <strong>%2$s</strong>."
+
+#. translators: 1: plugin name.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "Не удалось установить%1$s."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Процесс установки и активации начинается. На некоторых хостах этот процесс "
+"может занять некоторое время, поэтому наберитесь терпения."
+
+#. translators: 1: plugin name.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s Установлен и активирован успешно."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3594
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr "Показать детали"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3594
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr "Спрятать детали"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr "Все установки и активации были завершены."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Установка и активация плагина %1$s (%2$d/%3$d)"
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Процесс установки начинается. На некоторых хостах этот процесс может занять "
+"некоторое время, поэтому наберитесь терпения."
+
+#. translators: 1: plugin name.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%1$s  установлено успешно."
+
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr "Все установки были завершены."
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: TGM-Plugin-Activation-2.6.1-mind/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Установка Плагина %1$s (%2$d/%3$d)"
+
+#. translators: 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr "Одна мысль о  &ldquo;%1$s&rdquo;"
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s  Комментарий о &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Комментарии о  &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s Один комментарий о  &ldquo;%2$s&rdquo;"
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr "Комментарии закрыты."
+
+#: footer.php:28
+msgid "Поделись В Соцсетях:"
+msgstr ""
+
+#: home.php:26
+msgid "Заметки"
+msgstr ""
+
+#: inc/carbon-custom-fields-options/metabox.php:23
+msgid "Intro Section"
+msgstr "Секция - Начало"
+
+#: inc/carbon-custom-fields-options/metabox.php:27
+msgid "Intro section - Title"
+msgstr "Загловок секции Начало"
+
+#: inc/carbon-custom-fields-options/metabox.php:28
+msgid "Intro section - Subtitle"
+msgstr "Подзаголовок секции Начало"
+
+#: inc/carbon-custom-fields-options/metabox.php:29
+msgid "Intro section - button title"
+msgstr "Текст кнопки секции  Начало"
+
+#: inc/carbon-custom-fields-options/metabox.php:30
+msgid "Intro section - Video Link"
+msgstr "Загрузите  видео для секции Начало"
+
+#: inc/carbon-custom-fields-options/metabox.php:33
+msgid "Intro section - Poster for video"
+msgstr "Загрузите постер для видео в секции Начало"
+
+#: inc/carbon-custom-fields-options/metabox.php:38
+msgid "Benefit Section"
+msgstr "Секция Почему Мы"
+
+#: inc/carbon-custom-fields-options/metabox.php:42
+msgid "Benefit section - Title"
+msgstr "Заголовок секции Почему Мы"
+
+#: inc/carbon-custom-fields-options/metabox.php:43
+msgid "Benefit section - Subtitle"
+msgstr "Подзаголовок для секции Почему Мы"
+
+#: inc/carbon-custom-fields-options/metabox.php:44
+msgid "Benefit section - blocks benefit"
+msgstr "Блоки секции Почему Мы"
+
+#: inc/carbon-custom-fields-options/metabox.php:46
+msgid "Title of benefit"
+msgstr "Заголовок блока  Почему Мы"
+
+#: inc/carbon-custom-fields-options/metabox.php:47
+msgid "Content of benefit"
+msgstr "Контент блока Почему Мы"
+
+#: inc/carbon-custom-fields-options/metabox.php:49
+msgid "Icon of benefit"
+msgstr "Изображение блока Почему Мы"
+
+#: inc/carbon-custom-fields-options/metabox.php:54
+msgid "News Section"
+msgstr "Секция Новости"
+
+#: inc/carbon-custom-fields-options/metabox.php:58
+msgid "News section - Title"
+msgstr "Заголовок Секции Новости"
+
+#: inc/carbon-custom-fields-options/metabox.php:59
+msgid "News section - Subtitle"
+msgstr "Подзаголовок Секции Новости"
+
+#: inc/carbon-custom-fields-options/metabox.php:60
+msgid "News section - button title"
+msgstr "Текст кнопки  Секция Новости"
+
+#: inc/carbon-custom-fields-options/metabox.php:63
+msgid "Posts Section"
+msgstr "Секция Заметки"
+
+#: inc/carbon-custom-fields-options/metabox.php:67
+msgid "Posts section - Title"
+msgstr "Заголовок Секция Заметки"
+
+#: inc/carbon-custom-fields-options/metabox.php:68
+msgid "Posts section - Subtitle"
+msgstr "Подзаголовок Секция Заметки"
+
+#: inc/carbon-custom-fields-options/metabox.php:69
+msgid "Posts section - button title"
+msgstr "Текст кнопки Секция Заметки"
+
+#: inc/carbon-custom-fields-options/metabox.php:72
+msgid "Teachers Section"
+msgstr "Секция Учителя"
+
+#: inc/carbon-custom-fields-options/metabox.php:76
+msgid "Teachers section - Title"
+msgstr "Заголовок Секция Учителя"
+
+#: inc/carbon-custom-fields-options/metabox.php:77
+msgid "Teachers section - Subtitle"
+msgstr "Подзаголовок Секция Учителя"
+
+#: inc/carbon-custom-fields-options/metabox.php:80
+msgid "Testimonials Section"
+msgstr "Секция Отзывы"
+
+#: inc/carbon-custom-fields-options/metabox.php:84
+msgid "Testimonials section - Title"
+msgstr "Заголовок Секция Отзывы"
+
+#: inc/carbon-custom-fields-options/metabox.php:85
+msgid "Testimonials section - Subtitle"
+msgstr "Подзаголовок Секция Отзывы"
+
+#: inc/carbon-custom-fields-options/metabox.php:88
+msgid "Partners Section"
+msgstr "Секция Наши Партнеры"
+
+#: inc/carbon-custom-fields-options/metabox.php:92
+msgid "Partners section - Title"
+msgstr "Заголовок Секция Партнеры"
+
+#: inc/carbon-custom-fields-options/metabox.php:93
+msgid "Partners section - Subtitle"
+msgstr "Подзаголовок Секция Партнеры"
+
+#: inc/carbon-custom-fields-options/metabox.php:94
+msgid "Partners section - blocks partners"
+msgstr "Блок партнеры"
+
+#: inc/carbon-custom-fields-options/metabox.php:97
+msgid "Icon of partner"
+msgstr "Изображение  партнера"
+
+#: inc/carbon-custom-fields-options/metabox.php:102
+msgid "Products Section"
+msgstr "Секция Наши Работы"
+
+#: inc/carbon-custom-fields-options/metabox.php:106
+msgid "Products section - Title"
+msgstr "Заголовок секции Наши Работы"
+
+#: inc/carbon-custom-fields-options/metabox.php:107
+msgid "Products section - Subtitle"
+msgstr "Подзаголовок секции Наши Работы"
+
+#: inc/carbon-custom-fields-options/metabox.php:110
+msgid "Quotes Section"
+msgstr "Секция Цитаты"
+
+#: inc/carbon-custom-fields-options/metabox.php:114
+msgid "Quotes section - blocks quotes"
+msgstr "Секция Цитаты - блоки цитат"
+
+#: inc/carbon-custom-fields-options/metabox.php:116
+msgid "Picture for quote"
+msgstr "Изображение цитаты"
+
+#: inc/carbon-custom-fields-options/metabox.php:118
+msgid "Content of quote"
+msgstr "Контент цитаты"
+
+#: inc/carbon-custom-fields-options/metabox.php:120
+msgid "Author of quote"
+msgstr "Автор цитаты"
+
+#: inc/carbon-custom-fields-options/metabox.php:124
+msgid "Books Section"
+msgstr "Секция Книги"
+
+#: inc/carbon-custom-fields-options/metabox.php:128
+msgid "Books section - Amount of books"
+msgstr "Количество книг"
+
+#: inc/carbon-custom-fields-options/metabox.php:129
+msgid "Books section - Circulation of books"
+msgstr "Тираж книг"
+
+#: inc/carbon-custom-fields-options/metabox.php:130
+msgid "Books section - Amount Cities"
+msgstr "Количество городов"
+
+#: inc/carbon-custom-fields-options/metabox.php:133
+msgid "Map Section"
+msgstr "Секция для Карты"
+
+#: inc/carbon-custom-fields-options/metabox.php:138
+msgid "Map section - Map iframe"
+msgstr "Скопируйте сюда код карты"
+
+#: inc/carbon-custom-fields-options/metabox.php:156
+msgid "Testimonial Field"
+msgstr "Контент Отзыва"
+
+#: inc/carbon-custom-fields-options/metabox.php:159
+msgid "Footer Of Testimonials"
+msgstr "Подвал  Отзыва"
+
+#: inc/carbon-custom-fields-options/metabox.php:165
+msgid "Social Links"
+msgstr "Ссылки на социальные сети"
+
+#: inc/carbon-custom-fields-options/metabox.php:168
+msgid "Facebook Link"
+msgstr "Ссылка на Фэйсбук"
+
+#: inc/carbon-custom-fields-options/metabox.php:169
+msgid "Twitter Link"
+msgstr "Ссылка на Твиттер"
+
+#: inc/carbon-custom-fields-options/metabox.php:170
+msgid "VK Link"
+msgstr "Ссылка на Вконтакте"
+
+#: inc/carbon-custom-fields-options/metabox.php:171
+msgid "Instagram Link"
+msgstr "Ссылка на Инстограмм"
+
+#: inc/carbon-custom-fields-options/metabox.php:172
+msgid "Youtube Link"
+msgstr "Ссылка на Ютюб"
+
+#: inc/carbon-custom-fields-options/metabox.php:178
+msgid "Contact Form Shortcode Section"
+msgstr "Секция для шорткода  для контактной формы"
+
+#: inc/carbon-custom-fields-options/metabox.php:182
+msgid "Contact Form Shortcode"
+msgstr "Введите щорткод"
+
+#: inc/carbon-custom-fields-options/theme-option.php:9
+msgid "Theme Options"
+msgstr "Настройки Темы"
+
+#: inc/carbon-custom-fields-options/theme-option.php:11
+msgid "Header"
+msgstr "Шапка"
+
+#: inc/carbon-custom-fields-options/theme-option.php:12
+msgid "Logo Image"
+msgstr "Изображение логотипа"
+
+#: inc/carbon-custom-fields-options/theme-option.php:13
+msgid "Site Name"
+msgstr "Имя сайта"
+
+#: inc/carbon-custom-fields-options/theme-option.php:14
+msgid "Site Description"
+msgstr "Описание сайта"
+
+#: inc/carbon-custom-fields-options/theme-option.php:16
+msgid "Header Background Color"
+msgstr "Цвет фона шапки"
+
+#: inc/carbon-custom-fields-options/theme-option.php:18
+msgid "Header Background Image"
+msgstr "Изображение фона шапки"
+
+#: inc/carbon-custom-fields-options/theme-option.php:20
+msgid "Background repeat or not ?"
+msgstr "Повторять или нет?"
+
+#: inc/carbon-custom-fields-options/theme-option.php:24
+msgid "Footer"
+msgstr "Подвал"
+
+#: inc/carbon-custom-fields-options/theme-option.php:25
+msgid "Notification Email"
+msgstr "Уведомление по электронной почте"
+
+#: inc/carbon-custom-fields-options/theme-option.php:26
+msgid "Phone Number"
+msgstr "Телефонный номер"
+
+#: inc/custom-post-type-init/freebie-init.php:6
+#: inc/custom-post-type-init/freebie-init.php:8
+#: inc/custom-post-type-init/freebie-init.php:9
+#: inc/custom-post-type-init/freebie-init.php:19
+msgid "Freebie"
+msgstr "Халява"
+
+#: inc/custom-post-type-init/news-init.php:6
+#: inc/custom-post-type-init/news-init.php:8
+#: inc/custom-post-type-init/news-init.php:9
+#: inc/custom-post-type-init/news-init.php:19
+msgid "News"
+msgstr "Новости"
+
+#: inc/custom-post-type-init/teachers-init.php:6
+#: inc/custom-post-type-init/teachers-init.php:8
+#: inc/custom-post-type-init/teachers-init.php:19
+msgid "Teachers"
+msgstr "Учителя"
+
+#: inc/custom-post-type-init/teachers-init.php:9
+msgid "Teacher"
+msgstr "Учитель"
+
+#: inc/custom-post-type-init/teachers-init.php:10
+msgid "Add Teacher"
+msgstr "Добавить Учителя"
+
+#: inc/custom-post-type-init/teachers-init.php:11
+msgid "Add New Teacher"
+msgstr "Добавить Нового Учителя"
+
+#: inc/custom-post-type-init/teachers-init.php:12
+msgid "Edit Teacher"
+msgstr "Редактировать Учителя"
+
+#: inc/custom-post-type-init/teachers-init.php:13
+msgid "New Teacher"
+msgstr "Новый Учитель"
+
+#: inc/custom-post-type-init/teachers-init.php:14
+msgid "Show Teacher"
+msgstr "Показать Учителя"
+
+#: inc/custom-post-type-init/teachers-init.php:15
+msgid "Search Teacher"
+msgstr "Искать Учителя"
+
+#: inc/custom-post-type-init/teachers-init.php:16
+msgid "Not Found"
+msgstr "Не найдено"
+
+#: inc/custom-post-type-init/teachers-init.php:17
+msgid "Not fount in trash"
+msgstr "Не найдено в корзине"
+
+#: inc/custom-post-type-init/teachers-init.php:52
+msgctxt "taxonomy general name"
+msgid "Personal Roles"
+msgstr "Персональные роли"
+
+#: inc/custom-post-type-init/teachers-init.php:53
+msgctxt "taxonomy singular name"
+msgid "Personal Role"
+msgstr "Персональная роль"
+
+#: inc/custom-post-type-init/teachers-init.php:54
+msgid "Search Personal Roles"
+msgstr "Искать Персональную роль: %s"
+
+#: inc/custom-post-type-init/teachers-init.php:55
+msgid "All Personal Roles"
+msgstr "Все личные роли"
+
+#: inc/custom-post-type-init/teachers-init.php:56
+msgid "Parent Personal Role"
+msgstr "Родительская личная роль"
+
+#: inc/custom-post-type-init/teachers-init.php:57
+msgid "Parent Personal Role:"
+msgstr "Родительская личная роль:"
+
+#: inc/custom-post-type-init/teachers-init.php:58
+msgid "Edit Personal Role"
+msgstr "Редактировать личную роль"
+
+#: inc/custom-post-type-init/teachers-init.php:59
+msgid "Update Personal Role"
+msgstr "Обновить личную роль"
+
+#: inc/custom-post-type-init/teachers-init.php:60
+msgid "Add New Personal Role"
+msgstr "Добавить новую личную роль"
+
+#: inc/custom-post-type-init/teachers-init.php:61
+msgid "New Personal Role Name"
+msgstr "Имя новой личной роли"
+
+#: inc/custom-post-type-init/teachers-init.php:62
+msgid "Personal Role"
+msgstr "Личная роль"
+
+#: inc/custom-post-type-init/testimonials-init.php:6
+#: inc/custom-post-type-init/testimonials-init.php:8
+#: inc/custom-post-type-init/testimonials-init.php:19
+msgid "Testimonials"
+msgstr "Отзывы"
+
+#: inc/custom-post-type-init/testimonials-init.php:9
+msgid "Testimonial"
+msgstr "Отзыв"
+
+#: inc/customizer.php:79
+msgid "Header Settings"
+msgstr "Настройки шапки"
+
+#: inc/customizer.php:105
+msgid "Header Background"
+msgstr "Фон в шапке"
+
+#: inc/customizer.php:122
+msgid "Footer Settings"
+msgstr "Настройка подвала"
+
+#: inc/customizer.php:335
+msgid "Footer Background"
+msgstr "Фон подвала"
+
+#: inc/customizer.php:357
+msgid "Footer About Us Column Title"
+msgstr "Заглавие колонки  О Нас в подвале"
+
+#: inc/customizer.php:364
+msgid "Footer About Us Content"
+msgstr "Контент колонки О Нас в подвале"
+
+#: inc/customizer.php:374
+msgid "Footer Menu Title"
+msgstr "Заглавие колонки меню в подвале"
+
+#: inc/customizer.php:383
+msgid "Footer Address Column Title"
+msgstr "Заглавие колонки с адресами в подвале"
+
+#: inc/customizer.php:390
+msgid "Footer Contact Email"
+msgstr "Электронная почта в подвале"
+
+#: inc/customizer.php:397
+msgid "Footer Contact Phone"
+msgstr "Телефон в подвале"
+
+#: inc/customizer.php:404
+msgid "Footer Contact Address"
+msgstr "Адрес в подвале"
+
+#: inc/customizer.php:411
+msgid "Footer Contact Skype"
+msgstr "Скайп в подвале"
+
+#: inc/customizer.php:419
+msgid "Footer Copyright"
+msgstr "Копирайт в подвале"
+
+#: inc/customizer.php:441
+msgid "Advertising"
+msgstr "Реклама"
+
+#: inc/customizer.php:451
+msgid "Ваш рекламный код"
+msgstr ""
+
+#: inc/mind-menu-init.php:9
+msgid "Primary"
+msgstr "Главное"
+
+#: inc/mind-menu-init.php:10
+msgid "Footer Menu"
+msgstr "Меню подвала"
+
+#: inc/mind-menu-init.php:11
+msgid "Front Page Menu"
+msgstr "Меню Главной страницы"
+
+#: inc/mind-widget-init.php:7
+msgid "Sidebar"
+msgstr "Боковая колонка"
+
+#: inc/mind-widget-init.php:9
+msgid "Add widgets here."
+msgstr "Добавьте виджеты сюда."
+
+#: inc/mind_metabox_for_show_can_use_shortcodes.php:13
+msgid "Additional list shortcodes for Front Page"
+msgstr ""
+
+#: inc/nav-walker-bootstrap-init.php:12
+msgid "It appears the wp-bootstrap-navwalker.php file may be missing."
+msgstr "Похоже, файл wp-bootstrap-navwalker.php может отсутствовать."
+
+#. translators: %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Добавлено в %1$s"
+
+#. translators: %s: post author.
+#: inc/template-tags.php:45
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "добавлено    %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:62
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:65
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Добавленно в %1$s"
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:69
+msgctxt "list item separator"
+msgid ", "
+msgstr "разделитель "
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:72
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Помечено %1$s"
+
+#. translators: %s: post title
+#: inc/template-tags.php:82
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+"Оставить комментарий  < span class=\"screen-reader-text\"> на %s </span>"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:99 template-parts/content-page.php:59
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "Редактировать <span class=\"screen-reader-text\"> \" %s\"</span>"
+
+#: inc/template-tags.php:184
+msgid "« Previous"
+msgstr "« Предыдущая"
+
+#: inc/template-tags.php:185
+msgid "Next »"
+msgstr "Следующая »"
+
+#: inc/template-tags.php:188
+msgid " "
+msgstr ""
+
+#: inc/wp-bootstrap-navwalker.php:317
+msgid "Add a menu"
+msgstr "Добавить в метю"
+
+#. translators: %s: search query.
+#: search.php:23
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Результат поиска: %s"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-pages/template-no-sidebar.php:47
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "Читать дальше <span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-pages/template-no-sidebar.php:58 template-parts/content-news.php:76
+#: template-parts/content-page.php:40 template-parts/content.php:81
+msgid "Pages:"
+msgstr "Страницы:"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-news.php:54 template-parts/content.php:54
+#, php-format
+msgid " …continue reading…<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr " …читать далее... <span class=\"screen-reader-text\"> \"%s\"</span>"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Не найденно"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Готов к публикации своей первой заметки? <a href=\"%1$s\">Жми сдесь</a>."
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Извините, но ничего не соответствует вашим условиям поиска. Пожалуйста, "
+"попытайтесь снова с другими ключевыми словами."
+
+#: template-parts/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Кажется, мы не можем найти то, что вы ищете. Возможно, поиск может помочь."
+
+#: template-parts/front-page/teachers-section.php:139
+#: template-parts/front-page/testimonials-section.php:88
+msgid "Close"
+msgstr "Закрыть"
+
+#: template-parts/header/header-login-reg-modal.php:12
+msgid "Sign Up"
+msgstr "Регистарация"
+
+#: template-parts/header/header-login-reg-modal.php:15
+msgid "Sign In"
+msgstr "Войти"
+
+#: template-parts/header/header-search-form.php:8
+#: template-parts/header/header-search-form.php:10
+msgid "Search"
+msgstr "Искать"
+
+#: vendor/htmlburger/carbon-fields/core/Container/Block_Container.php:243
+msgid "The parent must be 'array', 'string' or 'null'."
+msgstr "Родитель должен быть «массивом», «строкой» или «нулем»."
+
+#: vendor/htmlburger/carbon-fields/core/Container/Block_Container.php:272
+msgid "The position of inner blocks must be 'above' or 'below'."
+msgstr "Положение внутренних блоков должно быть «выше» или «ниже»."
+
+#: vendor/htmlburger/carbon-fields/core/Container/Block_Container.php:290
+msgid "The template must be an 'array' or 'null'."
+msgstr "Шаблон должен быть «массивом» или «нулем»."
+
+#: vendor/htmlburger/carbon-fields/core/Container/Block_Container.php:308
+msgid "The template lock must be 'all', 'insert', 'false' or 'null'."
+msgstr "Блокировка шаблона должна быть «all», «insert», «false» или «null»."
+
+#: vendor/htmlburger/carbon-fields/core/Container/Block_Container.php:326
+msgid "The allowed blocks must be an 'array' or 'null'."
+msgstr "Разрешенные блоки должны быть массивом или нулем."
+
+#: vendor/htmlburger/carbon-fields/core/Container/Block_Container.php:393
+msgid "'render_callback' is required for the blocks."
+msgstr "'render_callback' требуется для блоков."
+
+#: vendor/htmlburger/carbon-fields/core/Container/Block_Container.php:397
+msgid "'render_callback' must be a callable."
+msgstr "'render_callback' должен быть вызываемым."
+
+#: vendor/htmlburger/carbon-fields/core/Container/Container.php:727
+msgid "General"
+msgstr "Общие"
+
+#: vendor/htmlburger/carbon-fields/core/Container/Theme_Options_Container.php:207
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: vendor/htmlburger/carbon-fields/core/Field/Footer_Scripts_Field.php:20
+msgid ""
+"If you need to add scripts to your footer (like Google Analytics tracking "
+"code), you should enter them in this box."
+msgstr ""
+"Если вам нужно добавить скрипты в нижний колонтитул (например, код "
+"отслеживания Google Analytics), введите их в это поле."
+
+#: vendor/htmlburger/carbon-fields/core/Field/Gravity_Form_Field.php:47
+msgid "No form"
+msgstr "Нет формы"
+
+#: vendor/htmlburger/carbon-fields/core/Field/Header_Scripts_Field.php:20
+msgid "If you need to add scripts to your header, you should enter them here."
+msgstr "Если вам нужно добавить скрипты в ваш заголовок, введите их здесь."
+
+#: vendor/htmlburger/carbon-fields/core/Field/Sidebar_Field.php:74
+msgctxt "sidebar"
+msgid "Add New"
+msgstr "Добавить новое"
+
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:69
+msgid "Please enter a name for the sidebar."
+msgstr "Пожалуйста, введите имя для  боковой панели."
+
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:72
+msgid "Unknown action attempted."
+msgstr "Неизвестное действие предпринято."
+
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:102
+msgid "Sidebar with the same ID is already registered."
+msgstr "Боковая панель с таким же идентификатором уже зарегистрирована."
+
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:112
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:142
+msgid ""
+"Failed to update option storing your custom sidebars. Please contact support."
+msgstr ""
+"Не удалось обновить параметр, сохраняющий ваши пользовательские боковые "
+"панели. Пожалуйста, свяжитесь со службой поддержки."
+
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:137
+msgid "Sidebar not found."
+msgstr "Боковая панель не найдена."
+
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:181
+msgid "Add Sidebar"
+msgstr "Добавить боковую колонку"
+
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:182
+msgid "Please enter the name of the new sidebar:"
+msgstr "Пожалуйста, введите название новой боковой панели:"
+
+#: vendor/htmlburger/carbon-fields/core/Libraries/Sidebar_Manager/Sidebar_Manager.php:183
+msgid "Are you sure you wish to remove this sidebar?"
+msgstr "Вы уверены, что хотите удалить эту боковую панель?"
+
+#: vendor/htmlburger/carbon-fields/core/REST_API/Router.php:368
+msgid "No option names provided"
+msgstr "Имена опций не указаны"
+
+#: vendor/htmlburger/carbon-fields/core/REST_API/Router.php:379
+msgid "Theme Options updated."
+msgstr "Опции темы обновлены."
+
+#: vendor/htmlburger/carbon-fields/core/REST_API/Router.php:401
+msgid "Sorry, you are not allowed to read blocks of this post."
+msgstr "Извините, вы не можете читать блоки этого поста."
+
+#: vendor/htmlburger/carbon-fields/core/REST_API/Router.php:411
+msgid "Sorry, you are not allowed to read blocks as this user."
+msgstr "Извините, вы не можете читать блоки как этот пользователь."
+
+#: vendor/htmlburger/carbon-fields/core/REST_API/Router.php:434
+msgid "The name of the block."
+msgstr "Название блока."
+
+#: vendor/htmlburger/carbon-fields/core/REST_API/Router.php:439
+msgid "The content of the block."
+msgstr "Содержание блока."
+
+#: vendor/htmlburger/carbon-fields/core/REST_API/Router.php:443
+msgid "ID of the post context."
+msgstr "Идентификатор пост-контекста."
+
+#: vendor/htmlburger/carbon-fields/core/REST_API/Router.php:474
+msgid "Invalid block."
+msgstr "Неверный блок."
+
+#: vendor/htmlburger/carbon-fields/templates/Container/common/options-page.php:43
+msgid "Actions"
+msgstr "Действия"
+
+#: vendor/htmlburger/carbon-fields/templates/Container/common/options-page.php:52
+msgid "Save Changes"
+msgstr "Сохранить изменения"
+
+#: vendor/htmlburger/carbon-fields/templates/Container/widget.php:4
+msgid "No options are available for this widget."
+msgstr "Для этого виджета нет доступных опций."
+
+#: woocommerce/cart/cart-empty.php:28
+msgid "Return to shop"
+msgstr "Возвратиться  в Наши Работы"
+
+#: woocommerce/cart/cart-totals.php:25
+msgid "Cart totals"
+msgstr "Итого в карзине"
+
+#: woocommerce/cart/cart-totals.php:30 woocommerce/cart/cart-totals.php:31
+#: woocommerce/cart/cart.php:33 woocommerce/cart/cart.php:125
+#: woocommerce/checkout/review-order.php:27
+#: woocommerce/checkout/review-order.php:59
+msgid "Subtotal"
+msgstr "Подитог"
+
+#: woocommerce/cart/cart-totals.php:52 woocommerce/cart/cart-totals.php:53
+msgid "Shipping"
+msgstr "Доставка"
+
+#. translators: %s location.
+#: woocommerce/cart/cart-totals.php:72
+#, php-format
+msgid "(estimated for %s)"
+msgstr "(оценивается для % s)"
+
+#: woocommerce/cart/cart-totals.php:98 woocommerce/cart/cart-totals.php:99
+#: woocommerce/checkout/review-order.php:106
+#: woocommerce/order/order-details.php:52
+msgid "Total"
+msgstr "Общее"
+
+#: woocommerce/cart/cart.php:30 woocommerce/cart/cart.php:77
+#: woocommerce/checkout/review-order.php:26
+#: woocommerce/order/order-details.php:51
+msgid "Product"
+msgstr "Наши работы"
+
+#: woocommerce/cart/cart.php:31 woocommerce/cart/cart.php:97
+msgid "Price"
+msgstr "Цена"
+
+#: woocommerce/cart/cart.php:32 woocommerce/cart/cart.php:103
+msgid "Quantity"
+msgstr "Количество"
+
+#: woocommerce/cart/cart.php:56
+msgid "Remove this item"
+msgstr "Удалить этот  пункт"
+
+#: woocommerce/cart/cart.php:92
+msgid "Available on backorder"
+msgstr "Доступно по предзаказу"
+
+#: woocommerce/cart/cart.php:144
+msgid "Coupon:"
+msgstr "Купон:"
+
+#: woocommerce/cart/cart.php:146 woocommerce/checkout/form-coupon.php:34
+msgid "Coupon code"
+msgstr "Код купона"
+
+#: woocommerce/cart/cart.php:148 woocommerce/cart/cart.php:149
+#: woocommerce/checkout/form-coupon.php:38
+msgid "Apply coupon"
+msgstr "Применить купон"
+
+#: woocommerce/cart/cart.php:156
+msgid "Update cart"
+msgstr "Обновить карзину"
+
+#: woocommerce/cart/cross-sells.php:25
+msgid "You may be interested in&hellip;"
+msgstr "Вы можете быть заинтересованы в&hellip;"
+
+#: woocommerce/cart/proceed-to-checkout-button.php:26
+msgid "Proceed to checkout"
+msgstr "Перейдите к оплате"
+
+#: woocommerce/checkout/form-checkout.php:26
+msgid "You must be logged in to checkout."
+msgstr "Вы должны войти в систему, чтобы оформить заказ."
+
+#: woocommerce/checkout/form-checkout.php:54
+msgid "Your order"
+msgstr "Твой Заказ"
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "Have a coupon?"
+msgstr "Есть купон?"
+
+#: woocommerce/checkout/form-coupon.php:26
+msgid "Click here to enter your code"
+msgstr "Нажмите здесь, чтобы ввести свой код"
+
+#: woocommerce/checkout/form-coupon.php:31
+msgid "If you have a coupon code, please apply it below."
+msgstr "Если у вас есть код купона, примените его ниже."
+
+#: woocommerce/checkout/payment.php:33
+msgid ""
+"Sorry, it seems that there are no available payment methods for your state. "
+"Please contact us if you require assistance or wish to make alternate "
+"arrangements."
+msgstr ""
+"Извините, похоже, что для вашего штата нет доступных способов оплаты. "
+"Пожалуйста, свяжитесь с нами, если вам требуется помощь или вы хотите "
+"принять альтернативные меры."
+
+#: woocommerce/checkout/payment.php:33
+msgid "Please fill in your details above to see available payment methods."
+msgstr ""
+"Пожалуйста, заполните свои данные выше, чтобы увидеть доступные способы "
+"оплаты."
+
+#. translators: $1 and $2 opening and closing emphasis tags respectively
+#: woocommerce/checkout/payment.php:42
+#, php-format
+msgid ""
+"Since your browser does not support JavaScript, or it is disabled, please "
+"ensure you click the %1$sUpdate Totals%2$s button before placing your order. "
+"You may be charged more than the amount stated above if you fail to do so."
+msgstr ""
+"Поскольку ваш браузер не поддерживает JavaScript или он отключен, убедитесь, "
+"что вы нажимаете кнопку  %1$s Обновить итог%2$s   перед оформлением заказа. "
+"С вас может быть снята сумма, превышающая указанную выше сумму, если вы "
+"этого не сделаете."
+
+#: woocommerce/checkout/payment.php:44
+msgid "Update totals"
+msgstr "Обновить итог"
+
+#: woocommerce/checkout/thankyou.php:29
+msgid ""
+"Unfortunately your order cannot be processed as the originating bank/"
+"merchant has declined your transaction. Please attempt your purchase again."
+msgstr ""
+"К сожалению, ваш заказ не может быть обработан, так как исходящий банк / "
+"продавец отклонил вашу транзакцию. Пожалуйста, повторите попытку покупки."
+
+#: woocommerce/checkout/thankyou.php:32
+msgid "Pay"
+msgstr "Оплатить"
+
+#: woocommerce/checkout/thankyou.php:34
+msgid "My account"
+msgstr "Мой аккаунт"
+
+#: woocommerce/checkout/thankyou.php:40 woocommerce/checkout/thankyou.php:82
+msgid "Thank you. Your order has been received."
+msgstr "Спасибо. Ваш заказ был получен."
+
+#: woocommerce/checkout/thankyou.php:45
+msgid "Order number:"
+msgstr "Номер заказа:"
+
+#: woocommerce/checkout/thankyou.php:50
+msgid "Date:"
+msgstr "Дата:"
+
+#: woocommerce/checkout/thankyou.php:56
+msgid "Email:"
+msgstr "Электронная почта:"
+
+#: woocommerce/checkout/thankyou.php:62
+msgid "Total:"
+msgstr "Итого:"
+
+#: woocommerce/checkout/thankyou.php:68
+msgid "Payment method:"
+msgstr "Способ оплаты:"
+
+#: woocommerce/global/form-login.php:34
+#: woocommerce/myaccount/form-lost-password.php:29
+msgid "Username or email"
+msgstr "Имя или почта"
+
+#: woocommerce/global/form-login.php:38
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:43
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:93
+#: woocommerce/includes/parts/wc-form-login.php:37
+#: woocommerce/includes/parts/wc-form-register.php:51
+#: woocommerce/myaccount/form-login.php:43
+#: woocommerce/myaccount/form-login.php:94
+msgid "Password"
+msgstr "Пароль"
+
+#: woocommerce/global/form-login.php:47
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:51
+#: woocommerce/includes/parts/wc-form-login.php:54
+#: woocommerce/myaccount/form-login.php:51
+msgid "Remember me"
+msgstr "Запомнить меня"
+
+#: woocommerce/global/form-login.php:52
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:32
+#: woocommerce/myaccount/form-login.php:32
+msgid "Login"
+msgstr "Войти"
+
+#: woocommerce/global/form-login.php:55
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:57
+#: woocommerce/includes/parts/wc-form-login.php:68
+#: woocommerce/myaccount/form-login.php:58
+msgid "Lost your password?"
+msgstr "Забыли пароль?"
+
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:39
+#: woocommerce/myaccount/form-login.php:39
+msgid "Username or email address"
+msgstr "Имя или почта"
+
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:54
+#: woocommerce/includes/parts/wc-form-login.php:63
+#: woocommerce/myaccount/form-login.php:54
+msgid "Log in"
+msgstr "Войти"
+
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:70
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:107
+#: woocommerce/includes/parts/wc-form-register.php:65
+#: woocommerce/myaccount/form-login.php:71
+#: woocommerce/myaccount/form-login.php:108
+msgid "Register"
+msgstr "Регистрация"
+
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:79
+#: woocommerce/includes/parts/wc-form-register.php:32
+#: woocommerce/myaccount/form-login.php:80
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:86
+#: woocommerce/includes/parts/wc-form-register.php:41
+#: woocommerce/myaccount/form-edit-account.php:46
+#: woocommerce/myaccount/form-login.php:87
+msgid "Email address"
+msgstr "Электронная почта"
+
+#: woocommerce/includes/parts/OLD__wc-form-login-register.php:99
+#: woocommerce/includes/parts/wc-form-register.php:57
+#: woocommerce/myaccount/form-login.php:100
+msgid "A password will be sent to your email address."
+msgstr "Пароль будет отправлен на вашу электронную почту."
+
+#: woocommerce/includes/parts/wc-form-login.php:30
+msgid "Login or email"
+msgstr "Логин или почта"
+
+#: woocommerce/includes/wc-functions-cart.php:36
+msgid "The cart is empty"
+msgstr "Корзина пуста"
+
+#: woocommerce/myaccount/downloads.php:42 woocommerce/myaccount/orders.php:101
+msgid "Browse products"
+msgstr "Искать наши работы"
+
+#: woocommerce/myaccount/downloads.php:45
+msgid "No downloads available yet."
+msgstr "Еще нет доступных скачек."
+
+#: woocommerce/myaccount/form-edit-account.php:29
+msgid "First name"
+msgstr "Имя"
+
+#: woocommerce/myaccount/form-edit-account.php:33
+msgid "Last name"
+msgstr "Фамилия"
+
+#: woocommerce/myaccount/form-edit-account.php:39
+msgid ""
+"This will be how your name will be displayed in the account section and in "
+"reviews"
+msgstr "Так будет отображаться ваше имя в разделе аккаунта и в обзорах"
+
+#: woocommerce/myaccount/form-edit-account.php:40
+msgid "Display name"
+msgstr "Показать имя"
+
+#: woocommerce/myaccount/form-edit-account.php:52
+msgid "Password change"
+msgstr "Смена пароля"
+
+#: woocommerce/myaccount/form-edit-account.php:56
+msgid "Current password (leave blank to leave unchanged)"
+msgstr "Текущий пароль ( оставьте пустым что бы не менять)"
+
+#: woocommerce/myaccount/form-edit-account.php:60
+msgid "New password (leave blank to leave unchanged)"
+msgstr "Новый пароль ( оставьте пустым,  что бы не менять)"
+
+#: woocommerce/myaccount/form-edit-account.php:64
+msgid "Confirm new password"
+msgstr "Подтвердите новый пароль"
+
+#: woocommerce/myaccount/form-edit-account.php:76
+msgid "Save changes"
+msgstr "Сохранить изменения"
+
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:26
+#: woocommerce/myaccount/my-address.php:35
+#: woocommerce/order/order-details-customer.php:32
+msgid "Billing address"
+msgstr "Платежный адрес"
+
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:27
+#: woocommerce/order/order-details-customer.php:92
+msgid "Shipping address"
+msgstr "Адрес доставки"
+
+#: woocommerce/myaccount/form-edit-address.php:46
+msgid "Save address"
+msgstr "Сохранить адрес"
+
+#: woocommerce/myaccount/form-lost-password.php:26
+msgid ""
+"Lost your password? Please enter your username or email address. You will "
+"receive a link to create a new password via email."
+msgstr ""
+"Забыли пароль? Пожалуйста, введите ваше имя пользователя или адрес "
+"электронной почты. Вы получите ссылку для создания нового пароля по "
+"электронной почте."
+
+#: woocommerce/myaccount/form-lost-password.php:39
+msgid "Reset password"
+msgstr "Сброс пароля"
+
+#: woocommerce/myaccount/form-reset-password.php:26
+msgid "Enter a new password below."
+msgstr "Введите новый пароль."
+
+#: woocommerce/myaccount/form-reset-password.php:29
+msgid "New password"
+msgstr "Новый пароль"
+
+#: woocommerce/myaccount/form-reset-password.php:33
+msgid "Re-enter new password"
+msgstr "Повторно введите новый пароль"
+
+#: woocommerce/myaccount/form-reset-password.php:46
+msgid "Save"
+msgstr "Сохранить"
+
+#: woocommerce/myaccount/my-address.php:46
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+"Следующие адреса будут использоваться на странице оформления заказа по "
+"умолчанию."
+
+#: woocommerce/myaccount/my-address.php:65
+msgid "Edit"
+msgstr "Редактировать"
+
+#: woocommerce/myaccount/my-address.php:65
+msgid "Add"
+msgstr "Добавить"
+
+#: woocommerce/myaccount/my-address.php:79
+#: woocommerce/order/order-details-customer.php:45
+msgid "Имя: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:84
+#: woocommerce/order/order-details-customer.php:50
+msgid "Страна: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:88
+#: woocommerce/order/order-details-customer.php:54
+msgid "Город: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:92
+#: woocommerce/order/order-details-customer.php:58
+msgid "Регон: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:97
+#: woocommerce/order/order-details-customer.php:63
+#: woocommerce/order/order-details-customer.php:67
+msgid "Адрес: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:101
+msgid "Адрес 2: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:105
+#: woocommerce/order/order-details-customer.php:71
+msgid "Почтовый индекс: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:109
+#: woocommerce/order/order-details-customer.php:75
+msgid "Компания: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:113
+#: woocommerce/order/order-details-customer.php:79
+msgid "Телефон: "
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:117
+#: woocommerce/order/order-details-customer.php:83
+msgid "Email: "
+msgstr "Электронная почта: "
+
+#: woocommerce/myaccount/orders.php:49
+msgctxt "hash before order number"
+msgid "#"
+msgstr ""
+
+#. translators: 1: formatted order total 2: total order items
+#: woocommerce/myaccount/orders.php:61
+#, php-format
+msgid "%1$s for %2$s item"
+msgid_plural "%1$s for %2$s items"
+msgstr[0] "%1$s  для %2$s  пункт"
+msgstr[1] "%1$s  для  %2$s  пунктов"
+msgstr[2] "%1$s  для  %2$s  пунктов"
+
+#: woocommerce/myaccount/orders.php:89
+msgid "Previous"
+msgstr "Предидущая"
+
+#: woocommerce/myaccount/orders.php:93
+msgid "Next"
+msgstr "Следующая"
+
+#: woocommerce/myaccount/orders.php:103
+msgid "No order has been made yet."
+msgstr "Вы еще не сделали заказ."
+
+#: woocommerce/order/order-details-customer.php:94
+msgid "N/A"
+msgstr ""
+
+#: woocommerce/order/order-details.php:45
+msgid "Order details"
+msgstr "Детали заказа"
+
+#: woocommerce/order/order-details.php:93
+msgid "Note:"
+msgstr "Объявление:"
+
+#: woocommerce/order/order-downloads.php:24
+msgid "Downloads"
+msgstr "Скачки"
+
+#: woocommerce/order/order-downloads.php:56
+msgid "&infin;"
+msgstr ""
+
+#: woocommerce/order/order-downloads.php:62
+msgid "Never"
+msgstr "Никогда"
+
+#: woocommerce/single-product-reviews.php:52
+msgid "There are no reviews yet."
+msgstr "Отзывов пока нет."
+
+#. translators: %s is product title
+#: woocommerce/single-product-reviews.php:63
+msgid "Add a review"
+msgstr "Добавить отзыв"
+
+#: woocommerce/single-product-reviews.php:63
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "Будьте первым, кто оставит отзыв &ldquo;%s&rdquo;"
+
+#. translators: %s is product title
+#: woocommerce/single-product-reviews.php:65
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Оставить комментарий к %s"
+
+#: woocommerce/single-product-reviews.php:69
+msgid "Submit"
+msgstr "Сдеалать"
+
+#: woocommerce/single-product-reviews.php:77
+msgid "Name"
+msgstr "Имя"
+
+#: woocommerce/single-product-reviews.php:83
+msgid "Email"
+msgstr "Почта"
+
+#. translators: %s opening and closing link tags respectively
+#: woocommerce/single-product-reviews.php:108
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a review."
+msgstr "Вы должны быть %1$s  залогинины  в%2$ s, чтобы оставить отзыв."
+
+#: woocommerce/single-product-reviews.php:112
+msgid "Your rating"
+msgstr "Ваш рейтинг"
+
+#: woocommerce/single-product-reviews.php:113
+msgid "Rate&hellip;"
+msgstr "Оценить&hellip;"
+
+#: woocommerce/single-product-reviews.php:114
+msgid "Perfect"
+msgstr "Идеально"
+
+#: woocommerce/single-product-reviews.php:115
+msgid "Good"
+msgstr "Хорошо"
+
+#: woocommerce/single-product-reviews.php:116
+msgid "Average"
+msgstr "Средне"
+
+#: woocommerce/single-product-reviews.php:117
+msgid "Not that bad"
+msgstr "Не так уж плохо"
+
+#: woocommerce/single-product-reviews.php:118
+msgid "Very poor"
+msgstr "Очень плохо"
+
+#: woocommerce/single-product-reviews.php:122
+msgid "Your review"
+msgstr "Ваш обзор"
+
+#: woocommerce/single-product-reviews.php:129
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+"Только зарегистрированные пользователи, которые  участвовали в этом "
+"событии , могут оставлять отзывы."
+
+#. Theme Name of the plugin/theme
+msgid "mind"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Theme for site of psychologists"
+msgstr "Тема для сайта  психологов"
+
+#. Author of the plugin/theme
+msgid "Aleksey"
+msgstr ""
+
+#~ msgid "This product is currently out of stock and unavailable."
+#~ msgstr "В данный момент товара нет в наличии и нет в наличии."
+
+#~ msgid "Clear"
+#~ msgstr "Очисть"
+
+#~ msgid ""
+#~ "Sorry, this product is unavailable. Please choose a different combination."
+#~ msgstr ""
+#~ "Извините, этот продукт недоступен. Пожалуйста, выберите другую комбинацию."
+
+#~ msgid "Category:"
+#~ msgid_plural "Categories:"
+#~ msgstr[0] "Категория:"
+#~ msgstr[1] "Категории:"
+#~ msgstr[2] "Категории:"
+
+#~ msgid "Tag:"
+#~ msgid_plural "Tags:"
+#~ msgstr[0] "Тэг:"
+#~ msgstr[1] "Тэги:"
+#~ msgstr[2] "Тэги:"
+
+#~ msgid "Share"
+#~ msgstr "Поделиться"
+
+#~ msgid "Toggle fullscreen"
+#~ msgstr "Переключиться на полный экран"
+
+#~ msgid "Zoom in/out"
+#~ msgstr "Приблизить/Отдалить"
+
+#~ msgid "Previous (arrow left)"
+#~ msgstr "Предыдущая (стрелка влево)"
+
+#~ msgid "Next (arrow right)"
+#~ msgstr "Следующая( стрелка вправо)"
+
+#~ msgid "Awaiting product image"
+#~ msgstr "В ожидании изображения продукта"
+
+#, php-format
+#~ msgid "%s customer review"
+#~ msgid_plural "%s customer reviews"
+#~ msgstr[0] "%s  отзыв клиента"
+#~ msgstr[1] "%s  отзывы клиентов"
+#~ msgstr[2] "%s  отзывы клиентов"
+
+#~ msgid "Related products"
+#~ msgstr "Связанные  продускты"
+
+#~ msgid "Your review is awaiting approval"
+#~ msgstr "Ваш отзыв ожидает одобрения"
+
+#~ msgid "verified owner"
+#~ msgstr "подтвержденный владелец"
+
+#~ msgid "Sale!"
+#~ msgstr "Распродажа!"
+
+#~ msgid "Additional information"
+#~ msgstr "Дополнительная инвормация"
+
+#~ msgid "Description"
+#~ msgstr "Описание"
+
+#~ msgid "You may also like&hellip;"
+#~ msgstr "Вам также может понравиться&hellip;"
+
+#, php-format
+#~ msgid ""
+#~ " ...читать дальше...<span class=\"screen-reader-text\"> \"%s\"</span>"
+#~ msgstr "Читать дальше<span class=\"screen-reader-text\"> \" %s\"</span>"
+
+#~ msgid "Proudly powered by %s"
+#~ msgstr "Сайт работает на  by %s"
+
+#~ msgid "Skip to content"
+#~ msgstr "Пропустить"
+
+#~ msgid "Primary Menu"
+#~ msgstr "Главное меню"

@@ -1,7 +1,7 @@
 <?php  if(!defined("ABSPATH")) exit; ?>
 <?php // if(is_user_logged_in() && !is_cart()  ) : ?>
 <?php // if( !is_cart() || !is_checkout()   || is_page_template('template-pages/template-checkout.php')) : ?>
-<?php if( is_cart() || is_wc_endpoint_url("order-received") ) return ""; ?>
+<?php if( is_cart() || is_wc_endpoint_url("order-received") || is_checkout() ||is_checkout_pay_page() ) return ""; ?>
 	<div class="s-header__basket-wr woocommerce mind-icon-cart">
 		<a href="<?php echo wc_get_cart_url() ?>" class="basket-btn basket-btn_fixed-xs">
 			<span class="badge badge-pill badge-secondary basket-btn__counter">

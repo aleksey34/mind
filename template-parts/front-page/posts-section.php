@@ -1,22 +1,22 @@
-<?php  if(!defined("ABSPATH")) exit; ?>
+<?php  if(!defined("ABSPATH")) exit;
+
+global $front_page_posts_per_page;
+global  $front_page_posts_title;
+global  $front_page_posts_subtitle;
+?>
 <section id="frontPagePosts" class="page-section section__news page-section__posts">
 	<div class="page-container-news">
-		<?php if(function_exists('carbon_get_the_post_meta')):  ?>
-			<div class="page-section-header">
-				<?php $posts_section_title = carbon_get_the_post_meta('crb_front_page_posts_section_title');
-				if(isset($posts_section_title) && !empty($posts_section_title)) :?>
-					<h2 class="page-section-title"><?php echo  $posts_section_title;   ?></h2>
-				<?php endif; ?>
-				<?php $posts_section_subtitle = carbon_get_the_post_meta('crb_front_page_posts_section_subtitle'); ?>
-				<?php if(isset($posts_section_subtitle) && !empty($posts_section_subtitle)) :?>
-					<h3 class="page-section-subtitle"><?php  echo $posts_section_subtitle;  ?></h3>
-				<?php endif;  ?>
-			</div>
-		<?php  endif; ?>
+		<?php
+		mind_front_page_get_section_title_subtitle_part(
+			$front_page_posts_title,
+			$front_page_posts_subtitle,
+			'crb_front_page_posts_section_title',
+			'crb_front_page_posts_section_subtitle')
+		?>
 		<div class="about-post-items">
 			<?php
 			$posts_args = array(
-				'posts_per_page' => 3,
+				'posts_per_page' => $front_page_posts_per_page,
 				//'post_type' => 'posts',
 			);
 			$query = new WP_Query( $posts_args );
@@ -70,4 +70,3 @@
 		</div>
 	</div>
 </section>
-<div class="divider"></div>

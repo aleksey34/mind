@@ -125,7 +125,7 @@
  // & > h2 + p + label,
 //  & > h2 + p + label + select
     display: block;
-    background-color: lightyellow;
+    background-color: lighten(lightyellow , 10%);
     transition: all 0.5s;
     margin-bottom: 0;
     width: 100%;
@@ -140,7 +140,7 @@
 //  &> h2 + p:hover +label + select ,
   & > h2 + p + label:hover,
   &> h2 +p + label + select:hover{
-    background-color: darken(lightyellow , 10%);
+    background-color: lighten(lightyellow , 1%);
   }
 
 
@@ -159,10 +159,10 @@
     &>li{
       display: block;
       padding: 15px auto 20px auto;
-      background-color: lightyellow;
+      background-color: lighten(lightyellow , 10%);
       transition: all 0.5s;
       &:hover{
-        background-color: darken(lightyellow , 10%);
+        background-color: lighten(lightyellow , 1%);
       }
       &>a{
         display: flex;

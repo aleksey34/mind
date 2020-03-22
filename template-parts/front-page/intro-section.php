@@ -37,7 +37,9 @@
 		<div  class="section-intro-modal  modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
 			<div  class="modal-dialog modal-xl">
 				<div class="modal-content">
-					<video  <?php  echo $poster_attr ? 'poster='.$poster_attr : '';  ?>  width="100%" height="auto" controls src="<?php  echo $intro_section_btn_link ; ?>"></video>
+					<video  <?php  echo $poster_attr ? 'poster='.$poster_attr : '';  ?>  width="100%" height="auto" controls src="<?php  echo $intro_section_btn_link ; ?>">
+                     <?php  echo  $poster_attr ? 'Тег video не поддерживается вашим браузером. <a download class="btn-success btn" href="'.$poster_attr.'">Скачайте видео</a>.' : '' ; ?>
+                    </video>
 				</div>
 			</div>
 		</div>

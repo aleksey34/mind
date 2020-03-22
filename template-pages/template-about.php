@@ -13,8 +13,10 @@ get_header();
 	        <?php if(have_posts()):
 		        while (have_posts()) : the_post();
 			        ?>
+                    <?php if(has_post_thumbnail()):  ?>
 	                <?php the_post_thumbnail();  ?>
-			        <?php the_title();  ?>
+                    <?php endif;   ?>
+			        <?php /// the_title();  - only for about us , so it not show on this page ?>
 			        <?php the_content(); ?>
 		        <?php
 		        endwhile;

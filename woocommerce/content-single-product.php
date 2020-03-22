@@ -50,7 +50,7 @@ if ( post_password_required() ) {
 	<?php
 	/**
 	 * Hook: woocommerce_before_single_product_summary.
-	 *
+	 * @hoocked mind_product_sticker_product_is_finished -5
 	 * @hooked woocommerce_show_product_sale_flash - 10
 	 * @hooked woocommerce_show_product_images - 20
 	 */

@@ -1,0 +1,36 @@
+.product_sticker_product_is_finished{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+
+// testing for footer -- for delete
+.wrap{
+  margin-top: 80px;
+  display:  grid;
+  grid-template-columns: minmax(250px , 300px) / 1fr;
+  grid-gap: 15px;
+
+}
+.item{
+
+}
+.menu_item{
+grid-column: 1 / 2;
+height: 30px;
+
+}
+.content_item{
+  display: none;
+  position: absolute;
+
+}
+.content_item.content_active{
+  display: block ;
+  position: relative;
+  grid-column: 2/3;
+  grid-row-start: 1 ;
+  grid-row-end: 5  ;
+
+}

@@ -115,7 +115,7 @@
 	-moz-outline: none;
 	-webkit-outline: none;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 28px;
+	font-size: 26px;
 	font-weight: 400;
 	color: #ccc;
 	padding-bottom: 22px;
@@ -244,4 +244,53 @@
 }
 .reg-login-form-wrap .form-detail .form-row-last input {
 	padding: 11px;
+}
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+  .block-login-register{
+    .tab  .tablinks{
+      font-size: 24px;
+    }
+  }
+
+}
+
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+.block-login-register{
+  .tab  .tablinks{
+    font-size: 22px;
+  }
+}
+
+}
+
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+  .block-login-register{
+    .tab  .tablinks{
+      font-size: 20px;
+    }
+  }
+
+}
+
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+  .block-login-register{
+    .tab  .tablinks{
+      font-size: 18px;
+    }
+  }
+
 }

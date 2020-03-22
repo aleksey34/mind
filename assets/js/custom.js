@@ -8,7 +8,7 @@ jQuery(document).on("ready", function () {
 
 
    blockLogRegIcon.on(" mouseup click" , function (event) {
-       blockLogReg.addClass("show");console.log('test');
+       blockLogReg.addClass("show");
        blockLogRegIcon.addClass("icon-reg-login-hidden");
    });
 
@@ -143,12 +143,17 @@ jQuery(document).on("ready" , function (event) {
     if(booksSection.length === 0) {return false;}
 
     // get blocks
-    let booksBlockCount = jQuery("#booksCount");
-    let booksBlockCirculation = jQuery("#booksCirculation");
-    let booksBlockCities = jQuery("#booksCities");
+    // let booksBlockCount = jQuery("#booksCount");
+    // let booksBlockCirculation = jQuery("#booksCirculation");
+    // let booksBlockCities = jQuery("#booksCities");
+    // get blocks without id
+    let booksBlockCount = jQuery(".stat__books").eq(0);
+    let booksBlockCirculation = jQuery(".stat__books").eq(1);
+    let booksBlockCities = jQuery(".stat__books").eq(2);
     if(booksBlockCount.length === 0 ||
         booksBlockCirculation.length === 0 ||
-        booksBlockCities.length === 0 ){ alert('test');
+        booksBlockCities.length === 0 ){
+        alert('test');
         return false;
     }
 
@@ -321,3 +326,4 @@ listAnchorSections.each(function (index, element) {
 })
 
 });
+

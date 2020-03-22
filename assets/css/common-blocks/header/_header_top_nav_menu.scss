@@ -56,9 +56,9 @@
   //  background-color: transparent;
    // width: 100%;
     transition: all 0.5s;
-    background-color: rgba( darken(#fff , 10%) , 0.6) !important ; // Sorry / need important here!
+    background-color: rgba( darken(#fff , 10%) , 0.9) !important ; // Sorry / need important here!
     &:hover{
-      background-color: rgba( darken(#fff , 10%) , 0.8) !important ; // Sorry / need important here!
+      background-color: rgba( darken(#fff , 10%) , 0.95) !important ; // Sorry / need important here!
     }
     .menu{
       border-bottom: none;

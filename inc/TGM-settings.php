@@ -140,7 +140,24 @@ function mind_register_required_plugins() {
 			'name'      => 'SMNTCS WooCommerce Quantity Buttons',
 			'slug'      => 'smntcs-woocommerce-quantity-buttons',
 			'required'  => true,
-		)
+		),
+		array(
+			'name'      => 'Variation Swatches for WooCommerce',
+			'slug'      => 'woo-variation-swatches',
+			'required'  => true,
+		),
+
+
+//		array(
+////			'name'      => 'SMNTCS WooCommerce Quantity Buttons',
+////			'slug'      => 'smntcs-woocommerce-quantity-buttons',
+////			'required'  => true,
+////		),array(
+////			'name'      => 'SMNTCS WooCommerce Quantity Buttons',
+////			'slug'      => 'smntcs-woocommerce-quantity-buttons',
+////			'required'  => true,
+////		)
+
 
 
 		// This is an example of the use of 'is_callable' functionality. A user could - for instance -

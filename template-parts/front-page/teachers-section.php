@@ -1,20 +1,19 @@
 <?php  if(!defined("ABSPATH")) exit;
+
+global  $front_page_teachers_title;
+global  $front_page_teachers_subtitle;
+
 $modal_teachers_data =  array();
 ?>
 <section id="frontPageTeachers" class="page-section section page-section__teachers">
 	<div class="page-container">
-		<?php if(function_exists('carbon_get_the_post_meta')) :  ?>
-			<div class="page-section-header">
-				<?php $teachers_section_title = carbon_get_the_post_meta('crb_front_page_teachers_section_title');
-				if(isset($teachers_section_title) && !empty($teachers_section_title)) :?>
-					<h2 class="page-section-title"><?php echo  $teachers_section_title;   ?></h2>
-				<?php endif; ?>
-				<?php $teachers_section_subtitle = carbon_get_the_post_meta('crb_front_page_teachers_section_subtitle'); ?>
-				<?php if(isset($teachers_section_subtitle) && !empty($teachers_section_subtitle)) :?>
-					<h3 class="page-section-subtitle"><?php  echo $teachers_section_subtitle;  ?></h3>
-				<?php endif;  ?>
-			</div>
-		<?php  endif; ?>
+<?php
+mind_front_page_get_section_title_subtitle_part(
+        $front_page_teachers_title,
+    $front_page_teachers_subtitle,
+    'crb_front_page_teachers_section_title',
+    'crb_front_page_teachers_section_subtitle')
+?>
 		<div class="teachers">
 			<?php
 			$teachers_args = array(
@@ -110,7 +109,6 @@ $modal_teachers_data =  array();
 		</div>
     </div>
 </section>
-<div class="divider"></div>
 <?php  //modal teacher
 if(isset($modal_teachers_data) && !empty($modal_teachers_data)):
 	$teacher_array_count = count($modal_teachers_data) ;
@@ -137,7 +135,7 @@ if(isset($modal_teachers_data) && !empty($modal_teachers_data)):
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php esc_html_e('Close' , 'mind'); ?></button>
             </div>
         </div>
     </div>

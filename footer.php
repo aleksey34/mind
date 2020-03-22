@@ -5,11 +5,10 @@
  *
  * @package mind
  */
-
 ?>
 <?php  $footer_background_url = get_theme_mod("footer_background");
 if(isset($footer_background_url) && !empty($footer_background_url)){
-	$footer_background_img  =  'background-image: url("'.$footer_background_url.'")';
+	$footer_background_img  =   'background-image: url("'.$footer_background_url.'")';
 	$footer_background_img = "$footer_background_img".';background-size: cover; background-position: center;';
 }
 ;
@@ -51,22 +50,49 @@ if(isset($footer_background_url) && !empty($footer_background_url)){
                 <?php 	$footer_email = get_theme_mod("footer_contact_email");
                  if(isset($footer_email) && !empty($footer_email)) :
                 ?>
-                <a href="<?php echo $footer_email;  ?>" class="footer__text__mail"><i class="fas fa-envelope-open-text"></i><span class="footer-contact-email"><?php 	echo  $footer_email; ?></span></a>
+                <p class="footer__text">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <a href="mailto:<?php echo $footer_email;  ?>" class="footer__text__mail  footer-contact-email">
+                        <?php 	echo  $footer_email; ?>
+                    </a>
+                </p>
                 <?php endif;
                 $footer_phone = get_theme_mod("footer_contact_phone");   ;
                 if(isset($footer_phone) && !empty($footer_phone)) :
                 ?>
-                <p class="footer__text"><i class="fas fa-phone"></i><span class="footer-contact-phone"><?php echo $footer_phone;  ?></span></p>
+                <p class="footer__text">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:<?php  echo $footer_phone;   //   footer-contact-phone12 ?>" class="footer-contact-phone footer-contact-phone__white footer__text__mail">
+                        <?php echo $footer_phone; ?>
+                    </a>
+                </p>
+                    <p class="footer__text">
+                        <?php  $footer_whatsapp = str_replace(array('-' , '+') ,'' , $footer_phone); ?>
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/<?php  echo $footer_whatsapp; ?>" class="footer-contact-phone  footer-contact-phone__white footer__text__mail">
+			                <?php echo $footer_phone; ?>
+                        </a>
+                    </p>
                 <?php endif;
                 $footer_address = get_theme_mod("footer_contact_address");   ;
                 if(isset($footer_address) && !empty($footer_address)) :
                 ?>
-                <p class="footer__text"><i class="fas fa-map-marker-alt"></i> <span class="footer-contact-address"><?php echo $footer_address;   ?></span></p>
+                <p class="footer__text">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="footer-contact-address">
+                        <?php echo $footer_address;   ?>
+                    </span>
+                </p>
                 <?php  endif;
                 $footer_skype = get_theme_mod("footer_contact_skype");   ;
                 if(isset($footer_skype) && !empty($footer_skype)) :
                 ?>
-                <p class="footer__text"><i class="fab fa-skype"></i> <span class="footer-contact-skype"><?php echo  $footer_skype;   ?></span></p>
+                <p class="footer__text">
+                    <i class="fab fa-skype"></i>
+                    <a href="skype:<?php  echo $footer_skype; ?>?call" class="footer-contact-skype">
+                        <?php echo  $footer_skype;   ?>
+                    </a>
+                </p>
                 <?php endif;   ?>
             </div>
         </div>

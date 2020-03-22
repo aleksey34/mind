@@ -1,22 +1,18 @@
 <?php  if(!defined("ABSPATH")) exit;
+
+global  $front_page_testimonials_title;
+global  $front_page_testimonials_subtitle;
+
 $testimonial_array = array();
 ?>
 <section id="frontPageTestimonials" class="page-section page-section__testimonials section ">
 	<div class="page-container">
 		<?php
-
-        if(function_exists('carbon_get_the_post_meta')):  ?>
-			<div class="page-section-header">
-				<?php $testimonials_section_title = carbon_get_the_post_meta('crb_front_page_testimonials_section_title');
-				if(isset($testimonials_section_title) && !empty($testimonials_section_title)) :?>
-					<h2 class="page-section-title"><?php echo  $testimonials_section_title;   ?></h2>
-				<?php endif; ?>
-				<?php $testimonials_section_subtitle = carbon_get_the_post_meta('crb_front_page_testimonials_section_subtitle'); ?>
-				<?php if(isset($testimonials_section_subtitle) && !empty($testimonials_section_subtitle)) :?>
-					<h3 class="page-section-subtitle"><?php  echo $testimonials_section_subtitle;  ?></h3>
-				<?php endif;  ?>
-			</div>
-		<?php  endif; ?>
+		mind_front_page_get_section_title_subtitle_part($front_page_testimonials_title,
+			$front_page_testimonials_subtitle,
+			'crb_front_page_testimonials_section_title',
+			'crb_front_page_testimonials_section_subtitle')
+		?>
 		<div class="testimonial-wrapper">
 			<?php
 			$testimonials_args = array(
@@ -61,7 +57,6 @@ $testimonial_array = array();
 		</div>
 	</div>
 </section>
-<div class="divider"></div>
 <?php  //modal testimonials
 if(isset($testimonial_array) && !empty($testimonial_array)):
 $testimonial_array_count = count($testimonial_array) ;
@@ -86,7 +81,7 @@ for($i=0; $i< $testimonial_array_count; $i++) :    ?>
                 </footer>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"><?php esc_html_e('Close' , 'mind'); ?></button>
             </div>
         </div>
     </div>

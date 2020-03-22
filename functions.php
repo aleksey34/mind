@@ -10,6 +10,8 @@
 
 /**
  * Carbon fields init
+ * Read  my comment in  this file
+ * this problem is unknown
  */
 require_once  get_template_directory() . "/inc/carbon-fields-init.php";
 
@@ -153,9 +155,14 @@ require_once  get_template_directory() . "/inc/custom-post-type-init/posts-chang
  */
 require_once  get_template_directory() . "/inc/mind_shortcodes_init.php";
 
+/**
+ * add yandex metrika into head
+ */
+require_once  get_template_directory() . "/inc/yandex-metrika.php";
+
 
 /**
- * register and add to theme  blocks gutenberg
+ * show list shortcodes in admin of pages , posts
  */
-//require_once  get_template_directory() . "/inc/gutenberg-blocks/index.php";
+require_once  get_template_directory() . "/inc/mind_metabox_for_show_can_use_shortcodes.php";
 

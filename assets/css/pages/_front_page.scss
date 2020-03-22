@@ -17,9 +17,8 @@
   justify-content: center;
   width: 100%;
   //height: 70vh;
-  background: url("../img/intro.jpg") center
-  no-repeat;
-  -webkid-background-size: cover;
+  background: url("../img/intro.jpg") center no-repeat;
+  //-webkid-background-size: cover;
   background-size: cover;
   flex-wrap: wrap;
 
@@ -39,7 +38,7 @@
   color:#979da8;
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 
 }
 
@@ -57,19 +56,19 @@
   font-weight: 300;
   font-style: normal;
   font-family: 'Exo 2', sans-serif;
-  color:
-          #ffffff;
+  color: #ffffff;
   font-size: 40px;
   line-height: 2;
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
 /* Header */
 .header {
   width: 100%;
-  padding-intro: 30px;
+  padding-top: 30px;
+ // padding:30px;  ??
   position: absolute;
-  intro: 0;
+ // intro: 0;
   left: 0;
   right: 0;
   z-index: 1000;
@@ -97,7 +96,7 @@
 
 .page-menu-item	{
   display: inline-block;
-  vertical-align: intro;
+  vertical-align: top;
   margin: 0 30px;
   position: relative;
 
@@ -116,7 +115,8 @@
   opacity: 0;
 
   position: absolute;
-  intro: 100%;
+//  intro: 100%;
+  top: 100%;
   left: 0;
   z-index: 1;
 
@@ -133,7 +133,7 @@
 
 .page-sub-menu > li {
   display: inline-block;
-  vertical-align: intro;
+  vertical-align: center;
   margin: 0 30px;
   position: relative;
 
@@ -146,7 +146,7 @@
 
   .btn {
     display: inline-block;
-    vertical-align: intro;
+    vertical-align: center;
     padding: 10px 15px;
 
     background-color: rgba(#419585 , 0.5);
@@ -214,11 +214,10 @@
 .services {
   display: flex;
  // margin-left: 100px;
-  margin-intro: 50px;
+//  margin-intro: 50px;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-
 .services__item {
   flex: 0 0 300px;
   padding-left: 109px;
@@ -233,14 +232,14 @@
 
 .services__icon {
   position: absolute;
-  intro: 0;
+  top: 0;
   left: 10px;
   z-index: 1;
-  transition: intro .2s linear;
+  transition: all .2s linear;
 }
 
 .services__icon:hover {
-  intro: -5px;
+  top: -5px;
 }
 
 .services__title {
@@ -310,7 +309,7 @@
 .about-post-items{
   max-width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 30px 0;
   flex-wrap: wrap;
   margin: 0 20px;
@@ -348,7 +347,8 @@
 
 /*---------------------- Об учителя -------------------------------*/
 .teachers{
-  margin-intro: 80px;
+//  margin-intro: 80px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -408,7 +408,8 @@
 }
 
 .teachers__info{
-  margin-intro: 20px;
+ // margin-intro: 20px;
+  margin-top: 20px;
   cursor: pointer;
   text-align: center;
 }
@@ -470,7 +471,7 @@
 
 .logos{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .logos{
@@ -510,7 +511,7 @@
 .page-section__products  ul.front-page-products-list{
   display: flex;
  // flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   li.product.type-product{
     flex: 0 1 330px ;
     box-shadow:  0 0  0 3px rgba(0,0,0, 0.07);
@@ -572,7 +573,8 @@ li.product.type-product{
   border-radius: 50%;
 
   position: absolute;
-  intro: 0;
+//  intro: 0;
+  top: 0;
   left: 0;
   z-index: 1;
   max-width: 20%;
@@ -609,7 +611,8 @@ li.product.type-product{
 
 /*  Statistics */
 .page-section.page-section__books{
-  margin-intro: 0;
+  //margin-intro: 0;
+  margin-top: 0;
   margin-left: 0;
   margin-right: 0;
   padding: 0;
@@ -622,6 +625,7 @@ li.product.type-product{
 .stat{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 
 }
 
@@ -661,7 +665,8 @@ li.product.type-product{
   display: flex;
   justify-content: space-between;
   text-align: center;
-  border-intro: 2px solid rgba(#6f6f6f , 0.5);
+  border-top: 2px solid rgba(#6f6f6f , 0.5);
+  //border-intro: 2px solid rgba(#6f6f6f , 0.5);
   border-bottom: 2px solid rgba(#6f6f6f , 0.5);
 }
 
@@ -707,7 +712,7 @@ flex: 1 1 100%;
 .testimonial-wrapper{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   .testimonial-item{
     flex: 0 1 350px;
     cursor: pointer;
@@ -794,7 +799,8 @@ flex: 1 1 100%;
   /* 5 */
 
   .teachers{
-    margin-intro: 30px;
+    margin-top: 30px;
+    //margin-intro: 30px;
   }
   .teachers__item{
     width: 310px;
@@ -837,7 +843,8 @@ flex: 1 1 100%;
   .reviews__photo{
     max-width: 15%;
     //margin: -24px 40px;
-  intro: 5px;
+   top: 5px;
+  //intro: 5px;
     left:10px;
   }
 
@@ -926,7 +933,7 @@ flex: 1 1 100%;
   }
   /*4*/
   .about-post-items{
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 0;
   }
 
@@ -1063,4 +1070,3 @@ flex: 1 1 100%;
 margin:  2rem 0;
 
 }
-

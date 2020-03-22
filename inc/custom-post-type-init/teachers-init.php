@@ -7,14 +7,14 @@ function register_post_types_teachers(){
 		'labels' => array(
 			'name'               => esc_html__("Teachers" , "mind"), // основное название для типа записи
 			'singular_name'      => esc_html__("Teacher" , "mind"), // название для одной записи этого типа
-			'add_new'            => 'Добавить Учителя', // для добавления новой записи
-			'add_new_item'       => 'Добавление Учителя', // заголовка у вновь создаваемой записи в админ-панели.
-			'edit_item'          => 'Редактирование Учителя', // для редактирования типа записи
-			'new_item'           => 'Новой Учитель', // текст новой записи
-			'view_item'          => 'Смотреть Учителя', // для просмотра записи этого типа.
-			'search_items'       => 'Искать Учителя', // для поиска по этим типам записи
-			'not_found'          => 'Не найдено', // если в результате поиска ничего не было найдено
-			'not_found_in_trash' => 'Не найдено в корзине', // если не было найдено в корзине
+			'add_new'            => __("Add Teacher" , 'mind') , // для добавления новой записи
+			'add_new_item'       =>  __("Add New Teacher" , 'mind') , // заголовка у вновь создаваемой записи в админ-панели.
+			'edit_item'          =>  __("Edit Teacher" , 'mind') , // для редактирования типа записи
+			'new_item'           =>  __("New Teacher" , 'mind') , // текст новой записи
+			'view_item'          =>  __("Show Teacher" , 'mind') , // для просмотра записи этого типа.
+			'search_items'       =>  __("Search Teacher" , 'mind') , // для поиска по этим типам записи
+			'not_found'          =>  __("Not Found" , 'mind') ,'Не найдено', // если в результате поиска ничего не было найдено
+			'not_found_in_trash' =>  __("Not fount in trash" , 'mind') , // если не было найдено в корзине
 			'parent_item_colon'  => '', // для родителей (у древовидных типов)
 			'menu_name'          =>  esc_html__("Teachers" , "mind"), // название меню
 		),
@@ -49,17 +49,17 @@ function  register_taxonomy_for_teachers(){
 	register_taxonomy('personal_role', array('teachers'), array(
 		'hierarchical'  => true,
 		'labels'        => array(
-			'name'              => _x( 'Personal Roles', 'taxonomy general name' ),
-			'singular_name'     => _x( 'Personal Role', 'taxonomy singular name' ),
-			'search_items'      =>  __( 'Search Personal Roles' ),
-			'all_items'         => __( 'All Personal Roles' ),
-			'parent_item'       => __( 'Parent Personal Role' ),
-			'parent_item_colon' => __( 'Parent Personal Role:' ),
-			'edit_item'         => __( 'Edit Personal Role' ),
-			'update_item'       => __( 'Update Personal Role' ),
-			'add_new_item'      => __( 'Add New Personal Role' ),
-			'new_item_name'     => __( 'New Personal Role Name' ),
-			'menu_name'         => __( 'Personal Role' ),
+			'name'              => _x( 'Personal Roles', 'taxonomy general name' , 'mind' ),
+			'singular_name'     => _x( 'Personal Role', 'taxonomy singular name', 'mind' ),
+			'search_items'      =>  __( 'Search Personal Roles', 'mind' ),
+			'all_items'         => __( 'All Personal Roles' , 'mind' ),
+			'parent_item'       => __( 'Parent Personal Role', 'mind' ),
+			'parent_item_colon' => __( 'Parent Personal Role:', 'mind' ),
+			'edit_item'         => __( 'Edit Personal Role', 'mind' ),
+			'update_item'       => __( 'Update Personal Role' , 'mind'),
+			'add_new_item'      => __( 'Add New Personal Role', 'mind' ),
+			'new_item_name'     => __( 'New Personal Role Name' , 'mind'),
+			'menu_name'         => __( 'Personal Role', 'mind' ),
 		),
 		'show_ui'       => true,
 		'query_var'     => true,

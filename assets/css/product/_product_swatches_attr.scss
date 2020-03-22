@@ -1,0 +1,43 @@
+// start  style button
+.button-variable-wrapper{
+
+  margin-left: 0;
+  padding: 0 0 0 9px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .button-variable-item{
+    margin-top: 25px;
+    transition: all 0.5s;
+    margin-right: 7px;
+    @extend  %btn;
+    @extend  %btn_dark;
+
+
+
+    .variable-item-span-button{
+     color: darken(#fff , 10%);
+      transition: all 0.5s;
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+
+  .button-variable-item.selected{
+    border: 1px solid  lighten(green , 10%);
+    box-shadow: 0 0 2px  2px rgba(#000 , 0.4);
+  }
+
+
+}
+
+// this is button -- очистить --
+// this is for all variatoins
+.variable-items-wrapper + .reset_variations{
+  display: inline-block;
+  margin-left: 15px;
+}
+// end variable button

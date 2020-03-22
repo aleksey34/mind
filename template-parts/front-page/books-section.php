@@ -8,7 +8,7 @@
 				if(isset($books_count) && !empty($books_count)) :
 					?>
 					<div class="stat__item">
-						<div id="booksCount" class="stat__books "><?php echo $books_count;  ?></div>
+						<div  class="stat__books "><?php echo $books_count;  ?></div>
 						<div class="stat__text">выпущенных книг</div>
 					</div>
 				<?php  endif; ?>
@@ -17,7 +17,7 @@
 				if(isset($books_circulation ) && !empty($books_circulation)) :
 					?>
 					<div class="stat__item">
-						<div id="booksCirculation" class="stat__books "><?php  echo $books_circulation ; ?></div>
+						<div  class="stat__books "><?php  echo $books_circulation ; ?></div>
 						<div class="stat__text">общим  тиражом</div>
 					</div>
 				<?php endif; ?>
@@ -25,12 +25,11 @@
 				if(isset($books_cities) && !empty($books_cities)) :
 					?>
 					<div class="stat__item">
-						<div id="booksCities" class="stat__books "><?php echo $books_cities;  ?></div>
+						<div  class="stat__books "><?php echo $books_cities;  ?></div>
 						<div class="stat__text">городов СНГ и зарубежья</div>
 					</div>
 				<?php  endif; ?>
 			</div>
 		</div>
 	</section>
-    <div class="divider"></div>
 <?php endif; ?>
